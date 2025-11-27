@@ -13,3 +13,5 @@ typedef struct Deque {
     node* tail;
     size_t size;
 } deque;
+
+size_t deque_get_size(const deque* d);

@@ -8,3 +8,8 @@ deque* deque_init(){
     new_deque->size = 0;
     return new_deque;
 }
+
+size_t deque_get_size(const deque* d){
+    if (d == NULL) return 0;
+    return d->size;
+}
