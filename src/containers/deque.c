@@ -147,3 +147,15 @@ void deque_del_middle(deque* d, size_t index){
     free(current_node);
     d->size--;
 }
+
+void deque_swap(deque* d, size_t index1, size_t index2) {
+    if (d == NULL || index1 >= d -> size || index2 >= d -> size) return;
+    if (index1 == index2) return;
+    node* node1 = d->head;
+    for (size_t i = 0; i < index1; i++) node1 = node1->next;
+    node* node2 = d->head;
+    for (size_t i = 0; i < index1; i++) node2 = node2->next;
+    void* temp_data = node1->data;
+    node1->data = node2->data;
+    node2->data = temp_data;
+}

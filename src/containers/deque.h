@@ -26,3 +26,4 @@ void deque_add_middle(deque* d, void* data, size_t index);
 void deque_del_begin(deque* d);
 void deque_del_end(deque* d);
 void deque_del_middle(deque* d, size_t index);
+void deque_swap(deque* d, size_t index1, size_t index2);
