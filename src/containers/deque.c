@@ -76,3 +76,25 @@ void deque_add_end(deque* d, void* data){
     }
     d->size++;
 }
+
+void deque_add_middle(deque* d, void* data, size_t index){
+    if (d == NULL || index >= d->size) return;
+    if (index == 0) {
+        deque_add_begin(d, data);
+    }
+    if (index == d->size) {
+        deque_add_end(d, data);
+    }
+
+    node* current_node = d->head;
+    for (size_t i = 0; i < index; i++){
+        current_node = current_node->next;
+    }
+    node* new_node = malloc(sizeof(node));
+    new_node->data = data;
+    new_node->next = current_node;
+    new_node->prev = current_node->prev;
+    current_node->prev->next = new_node;
+    current_node->prev = new_node;
+    d->size++;
+}
