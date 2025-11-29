@@ -15,5 +15,8 @@ typedef struct Deque {
 } deque;
 
 size_t deque_get_size(const deque* d);
-
 void* deque_get_elem(deque* d, size_t index);
+node* deque_begin(deque* d);
+node* deque_end(deque* d);
+node* deque_next(node* n);
+node* deque_prev(node* n);

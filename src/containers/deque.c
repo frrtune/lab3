@@ -24,3 +24,23 @@ void* deque_get_elem(deque* d, size_t index){
     }
     return current_node->data;
 }
+
+node* deque_begin(deque* d) {
+    if (d == NULL) return NULL;
+    return d->head;
+}
+
+node* deque_end(deque* d) {
+    if (d == NULL) return NULL;
+    return d->tail;
+}
+
+node* deque_next(node* n) {
+    if (n == NULL) return NULL;
+    return n->next;
+}
+
+node* deque_prev(node* n) {
+    if (n == NULL) return NULL;
+    return n->prev;
+}
