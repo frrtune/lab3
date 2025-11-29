@@ -181,3 +181,14 @@ void** deque_to_arr(deque* d) {
     }
     return arr;
 }
+
+void deque_free(deque* d) {
+    if (d == NULL) return;
+    node* current_node = d->head;
+    while (current_node != NULL) {
+        node* next_node = current_node->next;
+        free(current_node);
+        current_node = next_node;
+    }
+    free(d);
+}
