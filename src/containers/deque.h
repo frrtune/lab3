@@ -20,3 +20,5 @@ node* deque_begin(deque* d);
 node* deque_end(deque* d);
 node* deque_next(node* n);
 node* deque_prev(node* n);
+void deque_add_begin(deque* d, void* data);
+void deque_add_end(deque* d, void* data);

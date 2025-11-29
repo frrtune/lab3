@@ -44,3 +44,35 @@ node* deque_prev(node* n) {
     if (n == NULL) return NULL;
     return n->prev;
 }
+
+void deque_add_begin(deque* d, void* data){
+    if (d == NULL) return;
+    node* new_node = malloc(sizeof(node));
+    new_node->data = data;
+    new_node->prev = NULL;
+    new_node->next = d->head;
+    if (d->head != NULL){
+        d->head->prev = new_node;
+    }
+    d->head = new_node;
+    if (d->tail == NULL) {
+        d->tail = new_node;
+    }
+    d->size++;
+}
+
+void deque_add_end(deque* d, void* data){
+    if (d == NULL) return;
+    node* new_node = malloc(sizeof(node));
+    new_node->data = data;
+    new_node->next = NULL;
+    new_node->prev = d->tail;
+    if (d->tail != NULL){
+        d->tail->next = new_node;
+    }
+    d->tail = new_node;
+    if (d->head == NULL) {
+        d->head = new_node;
+    }
+    d->size++;
+}
