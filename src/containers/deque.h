@@ -27,3 +27,5 @@ void deque_del_begin(deque* d);
 void deque_del_end(deque* d);
 void deque_del_middle(deque* d, size_t index);
 void deque_swap(deque* d, size_t index1, size_t index2);
+deque* arr_to_deque(void** arr, size_t size);
+void** deque_to_arr(deque* d);

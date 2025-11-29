@@ -159,3 +159,25 @@ void deque_swap(deque* d, size_t index1, size_t index2) {
     node1->data = node2->data;
     node2->data = temp_data;
 }
+
+deque* arr_to_deque(void** arr, size_t size) {
+    if (arr == NULL) return NULL;
+    deque* d = deque_init();
+    if (d == NULL) return NULL;
+    for (size_t i = 0; i < size; i++) {
+        deque_add_end(d, arr[i]);
+    }
+    return d;
+}
+
+void** deque_to_arr(deque* d) {
+    if (d == NULL || d->size == 0) return NULL;
+    void** arr = calloc(d->size, sizeof(void*));
+    if (arr == NULL) return NULL;
+    node* current = d->head;
+    for (size_t i = 0; i <  d->size; i++) {
+        arr[i] = current->data;
+        current = current->next;
+    }
+    return arr;
+}
