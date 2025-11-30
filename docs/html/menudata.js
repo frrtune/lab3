@@ -24,4 +24,29 @@
 */
 var menudata={children:[
 {text:"Титульная страница",url:"index.html"},
-{text:"Описания",url:"pages.html"}]}
+{text:"Классы",url:"annotated.html",children:[
+{text:"Классы",url:"annotated.html"},
+{text:"Алфавитный указатель классов",url:"classes.html"},
+{text:"Члены классов",url:"functions.html",children:[
+{text:"Указатель",url:"functions.html"},
+{text:"Переменные",url:"functions_vars.html"}]}]},
+{text:"Файлы",url:"files.html",children:[
+{text:"Файлы",url:"files.html"},
+{text:"Список членов всех файлов",url:"globals.html",children:[
+{text:"Указатель",url:"globals.html",children:[
+{text:"a",url:"globals.html#index_a"},
+{text:"b",url:"globals.html#index_b"},
+{text:"d",url:"globals.html#index_d"},
+{text:"h",url:"globals.html#index_h"},
+{text:"m",url:"globals.html#index_m"},
+{text:"n",url:"globals.html#index_n"},
+{text:"p",url:"globals.html#index_p"},
+{text:"y",url:"globals.html#index_y"}]},
+{text:"Функции",url:"globals_func.html",children:[
+{text:"a",url:"globals_func.html#index_a"},
+{text:"d",url:"globals_func.html#index_d"},
+{text:"h",url:"globals_func.html#index_h"}]},
+{text:"Определения типов",url:"globals_type.html"},
+{text:"Перечисления",url:"globals_enum.html"},
+{text:"Элементы перечислений",url:"globals_eval.html"},
+{text:"Макросы",url:"globals_defs.html"}]}]}]}

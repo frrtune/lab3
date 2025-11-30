@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №3. Многоквартирный дом: Файл src/containers/deque.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа №3. Многоквартирный дом
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('deque_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл deque.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+</div>
+<p><a href="deque_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:Node" id="r_Node"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html">Node</a></td></tr>
+<tr class="memitem:Deque" id="r_Deque"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_deque.html">Deque</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ad8ecdcce462dd8e170ae1f164935aaa6" id="r_ad8ecdcce462dd8e170ae1f164935aaa6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a></td></tr>
+<tr class="memitem:aa3dbaddafc457194d17697f2e42ca57f" id="r_aa3dbaddafc457194d17697f2e42ca57f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_deque.html">Deque</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad59b3617f4810ae47e34d406fff214df" id="r_ad59b3617f4810ae47e34d406fff214df"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59b3617f4810ae47e34d406fff214df">deque_get_size</a> (const <a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+<tr class="memitem:a37e4baeda33d6ba9944ebd80fdf803db" id="r_a37e4baeda33d6ba9944ebd80fdf803db"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37e4baeda33d6ba9944ebd80fdf803db">deque_get_elem</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d, size_t index)</td></tr>
+<tr class="memitem:acd3d1d4d1b5918ff9f4e3729638d48a6" id="r_acd3d1d4d1b5918ff9f4e3729638d48a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd3d1d4d1b5918ff9f4e3729638d48a6">deque_begin</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+<tr class="memitem:a36566091670b21eabfa77b574ecdbbbb" id="r_a36566091670b21eabfa77b574ecdbbbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36566091670b21eabfa77b574ecdbbbb">deque_end</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+<tr class="memitem:a27cbac467fa58ab0b57814d1e4ad4c68" id="r_a27cbac467fa58ab0b57814d1e4ad4c68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27cbac467fa58ab0b57814d1e4ad4c68">deque_next</a> (<a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *n)</td></tr>
+<tr class="memitem:aa839a7c4998bb804004812af7f086283" id="r_aa839a7c4998bb804004812af7f086283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa839a7c4998bb804004812af7f086283">deque_prev</a> (<a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *n)</td></tr>
+<tr class="memitem:a39f24995f0adf023349564718d10d139" id="r_a39f24995f0adf023349564718d10d139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39f24995f0adf023349564718d10d139">deque_add_begin</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d, void *data)</td></tr>
+<tr class="memitem:a0ebf53bf23363a46f829a52871cb8401" id="r_a0ebf53bf23363a46f829a52871cb8401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ebf53bf23363a46f829a52871cb8401">deque_add_end</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d, void *data)</td></tr>
+<tr class="memitem:ae7edad4a4222f4b1291244633bc9937b" id="r_ae7edad4a4222f4b1291244633bc9937b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7edad4a4222f4b1291244633bc9937b">deque_add_middle</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d, void *data, size_t index)</td></tr>
+<tr class="memitem:a24bbfb45cc24f61535341213fc56856b" id="r_a24bbfb45cc24f61535341213fc56856b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24bbfb45cc24f61535341213fc56856b">deque_del_begin</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+<tr class="memitem:aa76e72978c651f62f3e44958a57214ce" id="r_aa76e72978c651f62f3e44958a57214ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa76e72978c651f62f3e44958a57214ce">deque_del_end</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+<tr class="memitem:ac10e49bbf0e4530fd77305e92c8c6e4c" id="r_ac10e49bbf0e4530fd77305e92c8c6e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac10e49bbf0e4530fd77305e92c8c6e4c">deque_del_middle</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d, size_t index)</td></tr>
+<tr class="memitem:a8cf69600778c8d2b317b8182056f2e8a" id="r_a8cf69600778c8d2b317b8182056f2e8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cf69600778c8d2b317b8182056f2e8a">deque_swap</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d, size_t index1, size_t index2)</td></tr>
+<tr class="memitem:abf3b020b50505461f4617c547d0ab2d5" id="r_abf3b020b50505461f4617c547d0ab2d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf3b020b50505461f4617c547d0ab2d5">arr_to_deque</a> (void **arr, size_t size)</td></tr>
+<tr class="memitem:a465c49645a590d34ff2875139a313fcc" id="r_a465c49645a590d34ff2875139a313fcc"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a465c49645a590d34ff2875139a313fcc">deque_to_arr</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+<tr class="memitem:ac30a1cedbf85118fe11071b99b5aa125" id="r_ac30a1cedbf85118fe11071b99b5aa125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac30a1cedbf85118fe11071b99b5aa125">deque_free</a> (<a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *d)</td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Типы</h2>
+<a id="aa3dbaddafc457194d17697f2e42ca57f" name="aa3dbaddafc457194d17697f2e42ca57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3dbaddafc457194d17697f2e42ca57f">&#9670;&#160;</a></span>deque</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_deque.html">Deque</a> <a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8ecdcce462dd8e170ae1f164935aaa6" name="ad8ecdcce462dd8e170ae1f164935aaa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ecdcce462dd8e170ae1f164935aaa6">&#9670;&#160;</a></span>node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_node.html">Node</a> <a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="abf3b020b50505461f4617c547d0ab2d5" name="abf3b020b50505461f4617c547d0ab2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3b020b50505461f4617c547d0ab2d5">&#9670;&#160;</a></span>arr_to_deque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> * arr_to_deque </td>
+          <td>(</td>
+          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39f24995f0adf023349564718d10d139" name="a39f24995f0adf023349564718d10d139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f24995f0adf023349564718d10d139">&#9670;&#160;</a></span>deque_add_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_add_begin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ebf53bf23363a46f829a52871cb8401" name="a0ebf53bf23363a46f829a52871cb8401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebf53bf23363a46f829a52871cb8401">&#9670;&#160;</a></span>deque_add_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_add_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7edad4a4222f4b1291244633bc9937b" name="ae7edad4a4222f4b1291244633bc9937b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7edad4a4222f4b1291244633bc9937b">&#9670;&#160;</a></span>deque_add_middle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_add_middle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd3d1d4d1b5918ff9f4e3729638d48a6" name="acd3d1d4d1b5918ff9f4e3729638d48a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3d1d4d1b5918ff9f4e3729638d48a6">&#9670;&#160;</a></span>deque_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> * deque_begin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24bbfb45cc24f61535341213fc56856b" name="a24bbfb45cc24f61535341213fc56856b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bbfb45cc24f61535341213fc56856b">&#9670;&#160;</a></span>deque_del_begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_del_begin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa76e72978c651f62f3e44958a57214ce" name="aa76e72978c651f62f3e44958a57214ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa76e72978c651f62f3e44958a57214ce">&#9670;&#160;</a></span>deque_del_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_del_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac10e49bbf0e4530fd77305e92c8c6e4c" name="ac10e49bbf0e4530fd77305e92c8c6e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10e49bbf0e4530fd77305e92c8c6e4c">&#9670;&#160;</a></span>deque_del_middle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_del_middle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36566091670b21eabfa77b574ecdbbbb" name="a36566091670b21eabfa77b574ecdbbbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36566091670b21eabfa77b574ecdbbbb">&#9670;&#160;</a></span>deque_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> * deque_end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac30a1cedbf85118fe11071b99b5aa125" name="ac30a1cedbf85118fe11071b99b5aa125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30a1cedbf85118fe11071b99b5aa125">&#9670;&#160;</a></span>deque_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37e4baeda33d6ba9944ebd80fdf803db" name="a37e4baeda33d6ba9944ebd80fdf803db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e4baeda33d6ba9944ebd80fdf803db">&#9670;&#160;</a></span>deque_get_elem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * deque_get_elem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad59b3617f4810ae47e34d406fff214df" name="ad59b3617f4810ae47e34d406fff214df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59b3617f4810ae47e34d406fff214df">&#9670;&#160;</a></span>deque_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t deque_get_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27cbac467fa58ab0b57814d1e4ad4c68" name="a27cbac467fa58ab0b57814d1e4ad4c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27cbac467fa58ab0b57814d1e4ad4c68">&#9670;&#160;</a></span>deque_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> * deque_next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa839a7c4998bb804004812af7f086283" name="aa839a7c4998bb804004812af7f086283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa839a7c4998bb804004812af7f086283">&#9670;&#160;</a></span>deque_prev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> * deque_prev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad8ecdcce462dd8e170ae1f164935aaa6">node</a> *</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cf69600778c8d2b317b8182056f2e8a" name="a8cf69600778c8d2b317b8182056f2e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf69600778c8d2b317b8182056f2e8a">&#9670;&#160;</a></span>deque_swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deque_swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a465c49645a590d34ff2875139a313fcc" name="a465c49645a590d34ff2875139a313fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465c49645a590d34ff2875139a313fcc">&#9670;&#160;</a></span>deque_to_arr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ** deque_to_arr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3dbaddafc457194d17697f2e42ca57f">deque</a> *</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_0b61c55142250c0cc363383afd8075a4.html">containers</a></li><li class="navelem"><a href="deque_8h.html">deque.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+\doxysection{Файл src/house.c}
+\hypertarget{house_8c}{}\label{house_8c}\index{src/house.c@{src/house.c}}
+{\ttfamily \#include "{}house.\+h"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{house_8c_a121cd15116f0c8f7d4974991907c90be}{house\+\_\+compare}} (const void \texorpdfstring{$\ast$}{*}h1, const void \texorpdfstring{$\ast$}{*}h2)
+\begin{DoxyCompactList}\small\item\em Функция-\/компаратор\+: сравнивает дома по шести параметрам в следующем порядке\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{house_8c_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{house_8c_a121cd15116f0c8f7d4974991907c90be}\index{house.c@{house.c}!house\_compare@{house\_compare}}
+\index{house\_compare@{house\_compare}!house.c@{house.c}}
+\doxysubsubsection{\texorpdfstring{house\_compare()}{house\_compare()}}
+{\footnotesize\ttfamily \label{house_8c_a121cd15116f0c8f7d4974991907c90be} 
+int house\+\_\+compare (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{h1}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{h2}{}\end{DoxyParamCaption})}
+
+
+
+Функция-\/компаратор\+: сравнивает дома по шести параметрам в следующем порядке\+: 
+
+
+\begin{DoxyEnumerate}
+\item Год постройки (чем больше год, тем лучше)
+\item Наличие лифта
+\item Тип (кирпичный \texorpdfstring{$>$}{>} монолитный \texorpdfstring{$>$}{>} панельный)
+\item Средняя площадь квартир (чем больше, тем лучше)
+\item Количество квартир (чем больше, тем лучше)
+\item Количество этажей (чем больше, тем лучше)
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Аргументы}
+{\em h1} & указатель на первый дом \\
+\hline
+{\em h2} & указатель на второй дом \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int отрицательное число, если h1 \texorpdfstring{$<$}{<} h2, положительное, если h1 \texorpdfstring{$>$}{>} h2, 0, если h1 = h2 
+\end{DoxyReturn}

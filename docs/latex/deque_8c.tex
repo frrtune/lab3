@@ -1,0 +1,147 @@
+\doxysection{Файл src/containers/deque.c}
+\hypertarget{deque_8c}{}\label{deque_8c}\index{src/containers/deque.c@{src/containers/deque.c}}
+{\ttfamily \#include "{}deque.\+h"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_aa3b2f5efa88f403761fb5b3460cfd4c9}{deque\+\_\+init}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{deque_8c_ad59b3617f4810ae47e34d406fff214df}{deque\+\_\+get\+\_\+size}} (const \mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_a37e4baeda33d6ba9944ebd80fdf803db}{deque\+\_\+get\+\_\+elem}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, size\+\_\+t index)
+\item 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_acd3d1d4d1b5918ff9f4e3729638d48a6}{deque\+\_\+begin}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\item 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_a36566091670b21eabfa77b574ecdbbbb}{deque\+\_\+end}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\item 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_a27cbac467fa58ab0b57814d1e4ad4c68}{deque\+\_\+next}} (\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*}n)
+\item 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_aa839a7c4998bb804004812af7f086283}{deque\+\_\+prev}} (\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*}n)
+\item 
+void \mbox{\hyperlink{deque_8c_a39f24995f0adf023349564718d10d139}{deque\+\_\+add\+\_\+begin}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, void \texorpdfstring{$\ast$}{*}data)
+\item 
+void \mbox{\hyperlink{deque_8c_a0ebf53bf23363a46f829a52871cb8401}{deque\+\_\+add\+\_\+end}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, void \texorpdfstring{$\ast$}{*}data)
+\item 
+void \mbox{\hyperlink{deque_8c_ae7edad4a4222f4b1291244633bc9937b}{deque\+\_\+add\+\_\+middle}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, void \texorpdfstring{$\ast$}{*}data, size\+\_\+t index)
+\item 
+void \mbox{\hyperlink{deque_8c_a24bbfb45cc24f61535341213fc56856b}{deque\+\_\+del\+\_\+begin}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\item 
+void \mbox{\hyperlink{deque_8c_aa76e72978c651f62f3e44958a57214ce}{deque\+\_\+del\+\_\+end}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\item 
+void \mbox{\hyperlink{deque_8c_ac10e49bbf0e4530fd77305e92c8c6e4c}{deque\+\_\+del\+\_\+middle}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, size\+\_\+t index)
+\item 
+void \mbox{\hyperlink{deque_8c_a8cf69600778c8d2b317b8182056f2e8a}{deque\+\_\+swap}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, size\+\_\+t index1, size\+\_\+t index2)
+\item 
+\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_abf3b020b50505461f4617c547d0ab2d5}{arr\+\_\+to\+\_\+deque}} (void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arr, size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{deque_8c_a465c49645a590d34ff2875139a313fcc}{deque\+\_\+to\+\_\+arr}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\item 
+void \mbox{\hyperlink{deque_8c_ac30a1cedbf85118fe11071b99b5aa125}{deque\+\_\+free}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{deque_8c_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{deque_8c_abf3b020b50505461f4617c547d0ab2d5}\index{deque.c@{deque.c}!arr\_to\_deque@{arr\_to\_deque}}
+\index{arr\_to\_deque@{arr\_to\_deque}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{arr\_to\_deque()}{arr\_to\_deque()}}
+{\footnotesize\ttfamily \label{deque_8c_abf3b020b50505461f4617c547d0ab2d5} 
+\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*} arr\+\_\+to\+\_\+deque (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arr}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a39f24995f0adf023349564718d10d139}\index{deque.c@{deque.c}!deque\_add\_begin@{deque\_add\_begin}}
+\index{deque\_add\_begin@{deque\_add\_begin}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_add\_begin()}{deque\_add\_begin()}}
+{\footnotesize\ttfamily \label{deque_8c_a39f24995f0adf023349564718d10d139} 
+void deque\+\_\+add\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a0ebf53bf23363a46f829a52871cb8401}\index{deque.c@{deque.c}!deque\_add\_end@{deque\_add\_end}}
+\index{deque\_add\_end@{deque\_add\_end}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_add\_end()}{deque\_add\_end()}}
+{\footnotesize\ttfamily \label{deque_8c_a0ebf53bf23363a46f829a52871cb8401} 
+void deque\+\_\+add\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_ae7edad4a4222f4b1291244633bc9937b}\index{deque.c@{deque.c}!deque\_add\_middle@{deque\_add\_middle}}
+\index{deque\_add\_middle@{deque\_add\_middle}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_add\_middle()}{deque\_add\_middle()}}
+{\footnotesize\ttfamily \label{deque_8c_ae7edad4a4222f4b1291244633bc9937b} 
+void deque\+\_\+add\+\_\+middle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_acd3d1d4d1b5918ff9f4e3729638d48a6}\index{deque.c@{deque.c}!deque\_begin@{deque\_begin}}
+\index{deque\_begin@{deque\_begin}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_begin()}{deque\_begin()}}
+{\footnotesize\ttfamily \label{deque_8c_acd3d1d4d1b5918ff9f4e3729638d48a6} 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} deque\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a24bbfb45cc24f61535341213fc56856b}\index{deque.c@{deque.c}!deque\_del\_begin@{deque\_del\_begin}}
+\index{deque\_del\_begin@{deque\_del\_begin}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_del\_begin()}{deque\_del\_begin()}}
+{\footnotesize\ttfamily \label{deque_8c_a24bbfb45cc24f61535341213fc56856b} 
+void deque\+\_\+del\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_aa76e72978c651f62f3e44958a57214ce}\index{deque.c@{deque.c}!deque\_del\_end@{deque\_del\_end}}
+\index{deque\_del\_end@{deque\_del\_end}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_del\_end()}{deque\_del\_end()}}
+{\footnotesize\ttfamily \label{deque_8c_aa76e72978c651f62f3e44958a57214ce} 
+void deque\+\_\+del\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_ac10e49bbf0e4530fd77305e92c8c6e4c}\index{deque.c@{deque.c}!deque\_del\_middle@{deque\_del\_middle}}
+\index{deque\_del\_middle@{deque\_del\_middle}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_del\_middle()}{deque\_del\_middle()}}
+{\footnotesize\ttfamily \label{deque_8c_ac10e49bbf0e4530fd77305e92c8c6e4c} 
+void deque\+\_\+del\+\_\+middle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a36566091670b21eabfa77b574ecdbbbb}\index{deque.c@{deque.c}!deque\_end@{deque\_end}}
+\index{deque\_end@{deque\_end}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_end()}{deque\_end()}}
+{\footnotesize\ttfamily \label{deque_8c_a36566091670b21eabfa77b574ecdbbbb} 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} deque\+\_\+end (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_ac30a1cedbf85118fe11071b99b5aa125}\index{deque.c@{deque.c}!deque\_free@{deque\_free}}
+\index{deque\_free@{deque\_free}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_free()}{deque\_free()}}
+{\footnotesize\ttfamily \label{deque_8c_ac30a1cedbf85118fe11071b99b5aa125} 
+void deque\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a37e4baeda33d6ba9944ebd80fdf803db}\index{deque.c@{deque.c}!deque\_get\_elem@{deque\_get\_elem}}
+\index{deque\_get\_elem@{deque\_get\_elem}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_get\_elem()}{deque\_get\_elem()}}
+{\footnotesize\ttfamily \label{deque_8c_a37e4baeda33d6ba9944ebd80fdf803db} 
+void \texorpdfstring{$\ast$}{*} deque\+\_\+get\+\_\+elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{size\+\_\+t}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_ad59b3617f4810ae47e34d406fff214df}\index{deque.c@{deque.c}!deque\_get\_size@{deque\_get\_size}}
+\index{deque\_get\_size@{deque\_get\_size}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_get\_size()}{deque\_get\_size()}}
+{\footnotesize\ttfamily \label{deque_8c_ad59b3617f4810ae47e34d406fff214df} 
+size\+\_\+t deque\+\_\+get\+\_\+size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_aa3b2f5efa88f403761fb5b3460cfd4c9}\index{deque.c@{deque.c}!deque\_init@{deque\_init}}
+\index{deque\_init@{deque\_init}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_init()}{deque\_init()}}
+{\footnotesize\ttfamily \label{deque_8c_aa3b2f5efa88f403761fb5b3460cfd4c9} 
+\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*} deque\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a27cbac467fa58ab0b57814d1e4ad4c68}\index{deque.c@{deque.c}!deque\_next@{deque\_next}}
+\index{deque\_next@{deque\_next}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_next()}{deque\_next()}}
+{\footnotesize\ttfamily \label{deque_8c_a27cbac467fa58ab0b57814d1e4ad4c68} 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} deque\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*}}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_aa839a7c4998bb804004812af7f086283}\index{deque.c@{deque.c}!deque\_prev@{deque\_prev}}
+\index{deque\_prev@{deque\_prev}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_prev()}{deque\_prev()}}
+{\footnotesize\ttfamily \label{deque_8c_aa839a7c4998bb804004812af7f086283} 
+\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*} deque\+\_\+prev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_ad8ecdcce462dd8e170ae1f164935aaa6}{node}} \texorpdfstring{$\ast$}{*}}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a8cf69600778c8d2b317b8182056f2e8a}\index{deque.c@{deque.c}!deque\_swap@{deque\_swap}}
+\index{deque\_swap@{deque\_swap}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_swap()}{deque\_swap()}}
+{\footnotesize\ttfamily \label{deque_8c_a8cf69600778c8d2b317b8182056f2e8a} 
+void deque\+\_\+swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{size\+\_\+t}]{index1}{, }\item[{size\+\_\+t}]{index2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{deque_8c_a465c49645a590d34ff2875139a313fcc}\index{deque.c@{deque.c}!deque\_to\_arr@{deque\_to\_arr}}
+\index{deque\_to\_arr@{deque\_to\_arr}!deque.c@{deque.c}}
+\doxysubsubsection{\texorpdfstring{deque\_to\_arr()}{deque\_to\_arr()}}
+{\footnotesize\ttfamily \label{deque_8c_a465c49645a590d34ff2875139a313fcc} 
+void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} deque\+\_\+to\+\_\+arr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+

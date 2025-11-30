@@ -25,13 +25,31 @@
 var NAVTREE =
 [
   [ "Лабораторная работа №3. Многоквартирный дом", "index.html", [
-    [ "README", "md__r_e_a_d_m_e.html", null ]
+    [ "Классы", "annotated.html", [
+      [ "Классы", "annotated.html", "annotated_dup" ],
+      [ "Алфавитный указатель классов", "classes.html", null ],
+      [ "Члены классов", "functions.html", [
+        [ "Указатель", "functions.html", null ],
+        [ "Переменные", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Файлы", "files.html", [
+      [ "Файлы", "files.html", "files_dup" ],
+      [ "Список членов всех файлов", "globals.html", [
+        [ "Указатель", "globals.html", null ],
+        [ "Функции", "globals_func.html", null ],
+        [ "Определения типов", "globals_type.html", null ],
+        [ "Перечисления", "globals_enum.html", null ],
+        [ "Элементы перечислений", "globals_eval.html", null ],
+        [ "Макросы", "globals_defs.html", null ]
+      ] ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
