@@ -20,4 +20,4 @@ typedef struct House {
     float avg_area;
 } house;
 
-int house_compare(const house* house1, const house* house2);
+int house_compare(const void* h1, const void* h2);
