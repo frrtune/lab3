@@ -91,7 +91,13 @@ $(function(){initNavTree('sort_8h_source.html','',''); });
   <div class="headertitle"><div class="title">sort.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="sort_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="sort_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="sort_8h.html#aa219f7716ca95fc67d02c952391ace7e">    3</a></span><span class="keyword">typedef</span> int (*<a class="code hl_typedef" href="sort_8h.html#aa219f7716ca95fc67d02c952391ace7e">cmpr</a>)(<span class="keyword">const</span> <span class="keywordtype">void</span>*, <span class="keyword">const</span> <span class="keywordtype">void</span>*);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span> <a class="code hl_function" href="sort_8h.html#adb8a74c85ca5a2d1868fbf4510418188">shaker_sort</a>(<a class="code hl_typedef" href="deque_8h.html#aa3dbaddafc457194d17697f2e42ca57f">deque</a>* d, <a class="code hl_typedef" href="sort_8h.html#aa219f7716ca95fc67d02c952391ace7e">cmpr</a> compare);</div>
+<div class="ttc" id="adeque_8h_html_aa3dbaddafc457194d17697f2e42ca57f"><div class="ttname"><a href="deque_8h.html#aa3dbaddafc457194d17697f2e42ca57f">deque</a></div><div class="ttdeci">struct Deque deque</div></div>
+<div class="ttc" id="asort_8h_html_aa219f7716ca95fc67d02c952391ace7e"><div class="ttname"><a href="sort_8h.html#aa219f7716ca95fc67d02c952391ace7e">cmpr</a></div><div class="ttdeci">int(* cmpr)(const void *, const void *)</div><div class="ttdef"><b>Определения</b> sort.h:3</div></div>
+<div class="ttc" id="asort_8h_html_adb8a74c85ca5a2d1868fbf4510418188"><div class="ttname"><a href="sort_8h.html#adb8a74c85ca5a2d1868fbf4510418188">shaker_sort</a></div><div class="ttdeci">void shaker_sort(deque *d, cmpr compare)</div><div class="ttdoc">Сортировка перемешиванием - модификация пузырьковой сортировки: проходит по массиву слева направо и с...</div><div class="ttdef"><b>Определения</b> sort.c:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

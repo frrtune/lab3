@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['data_0',['data',['../struct_node.html#a38b733496e3eff5e0b4fcb11cd9b866a',1,'Node']]],
-  ['deque_1',['Deque',['../struct_deque.html',1,'']]],
-  ['deque_2',['deque',['../deque_8h.html#aa3dbaddafc457194d17697f2e42ca57f',1,'deque.h']]],
-  ['deque_2ec_3',['deque.c',['../deque_8c.html',1,'']]],
-  ['deque_2eh_4',['deque.h',['../deque_8h.html',1,'']]],
-  ['deque_5fadd_5fbegin_5',['deque_add_begin',['../deque_8c.html#a39f24995f0adf023349564718d10d139',1,'deque_add_begin(deque *d, void *data):&#160;deque.c'],['../deque_8h.html#a39f24995f0adf023349564718d10d139',1,'deque_add_begin(deque *d, void *data):&#160;deque.c']]],
-  ['deque_5fadd_5fend_6',['deque_add_end',['../deque_8c.html#a0ebf53bf23363a46f829a52871cb8401',1,'deque_add_end(deque *d, void *data):&#160;deque.c'],['../deque_8h.html#a0ebf53bf23363a46f829a52871cb8401',1,'deque_add_end(deque *d, void *data):&#160;deque.c']]],
-  ['deque_5fadd_5fmiddle_7',['deque_add_middle',['../deque_8c.html#ae7edad4a4222f4b1291244633bc9937b',1,'deque_add_middle(deque *d, void *data, size_t index):&#160;deque.c'],['../deque_8h.html#ae7edad4a4222f4b1291244633bc9937b',1,'deque_add_middle(deque *d, void *data, size_t index):&#160;deque.c']]],
-  ['deque_5fbegin_8',['deque_begin',['../deque_8c.html#acd3d1d4d1b5918ff9f4e3729638d48a6',1,'deque_begin(deque *d):&#160;deque.c'],['../deque_8h.html#acd3d1d4d1b5918ff9f4e3729638d48a6',1,'deque_begin(deque *d):&#160;deque.c']]],
-  ['deque_5fdel_5fbegin_9',['deque_del_begin',['../deque_8c.html#a24bbfb45cc24f61535341213fc56856b',1,'deque_del_begin(deque *d):&#160;deque.c'],['../deque_8h.html#a24bbfb45cc24f61535341213fc56856b',1,'deque_del_begin(deque *d):&#160;deque.c']]],
-  ['deque_5fdel_5fend_10',['deque_del_end',['../deque_8c.html#aa76e72978c651f62f3e44958a57214ce',1,'deque_del_end(deque *d):&#160;deque.c'],['../deque_8h.html#aa76e72978c651f62f3e44958a57214ce',1,'deque_del_end(deque *d):&#160;deque.c']]],
-  ['deque_5fdel_5fmiddle_11',['deque_del_middle',['../deque_8c.html#ac10e49bbf0e4530fd77305e92c8c6e4c',1,'deque_del_middle(deque *d, size_t index):&#160;deque.c'],['../deque_8h.html#ac10e49bbf0e4530fd77305e92c8c6e4c',1,'deque_del_middle(deque *d, size_t index):&#160;deque.c']]],
-  ['deque_5fend_12',['deque_end',['../deque_8c.html#a36566091670b21eabfa77b574ecdbbbb',1,'deque_end(deque *d):&#160;deque.c'],['../deque_8h.html#a36566091670b21eabfa77b574ecdbbbb',1,'deque_end(deque *d):&#160;deque.c']]],
-  ['deque_5ffree_13',['deque_free',['../deque_8c.html#ac30a1cedbf85118fe11071b99b5aa125',1,'deque_free(deque *d):&#160;deque.c'],['../deque_8h.html#ac30a1cedbf85118fe11071b99b5aa125',1,'deque_free(deque *d):&#160;deque.c']]],
-  ['deque_5fget_5felem_14',['deque_get_elem',['../deque_8c.html#a37e4baeda33d6ba9944ebd80fdf803db',1,'deque_get_elem(deque *d, size_t index):&#160;deque.c'],['../deque_8h.html#a37e4baeda33d6ba9944ebd80fdf803db',1,'deque_get_elem(deque *d, size_t index):&#160;deque.c']]],
-  ['deque_5fget_5fsize_15',['deque_get_size',['../deque_8c.html#ad59b3617f4810ae47e34d406fff214df',1,'deque_get_size(const deque *d):&#160;deque.c'],['../deque_8h.html#ad59b3617f4810ae47e34d406fff214df',1,'deque_get_size(const deque *d):&#160;deque.c']]],
-  ['deque_5finit_16',['deque_init',['../deque_8c.html#aa3b2f5efa88f403761fb5b3460cfd4c9',1,'deque.c']]],
-  ['deque_5fnext_17',['deque_next',['../deque_8c.html#a27cbac467fa58ab0b57814d1e4ad4c68',1,'deque_next(node *n):&#160;deque.c'],['../deque_8h.html#a27cbac467fa58ab0b57814d1e4ad4c68',1,'deque_next(node *n):&#160;deque.c']]],
-  ['deque_5fprev_18',['deque_prev',['../deque_8c.html#aa839a7c4998bb804004812af7f086283',1,'deque_prev(node *n):&#160;deque.c'],['../deque_8h.html#aa839a7c4998bb804004812af7f086283',1,'deque_prev(node *n):&#160;deque.c']]],
-  ['deque_5fswap_19',['deque_swap',['../deque_8c.html#a8cf69600778c8d2b317b8182056f2e8a',1,'deque_swap(deque *d, size_t index1, size_t index2):&#160;deque.c'],['../deque_8h.html#a8cf69600778c8d2b317b8182056f2e8a',1,'deque_swap(deque *d, size_t index1, size_t index2):&#160;deque.c']]],
-  ['deque_5fto_5farr_20',['deque_to_arr',['../deque_8c.html#a465c49645a590d34ff2875139a313fcc',1,'deque_to_arr(deque *d):&#160;deque.c'],['../deque_8h.html#a465c49645a590d34ff2875139a313fcc',1,'deque_to_arr(deque *d):&#160;deque.c']]],
-  ['district_21',['district',['../struct_house.html#a7e2ca58d4adc4f7c38379abcef150a2a',1,'House']]]
+  ['cmpr_0',['cmpr',['../sort_8h.html#aa219f7716ca95fc67d02c952391ace7e',1,'sort.h']]]
 ];

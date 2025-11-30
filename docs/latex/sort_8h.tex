@@ -1,2 +1,45 @@
 \doxysection{Файл src/algs/sort.h}
 \hypertarget{sort_8h}{}\label{sort_8h}\index{src/algs/sort.h@{src/algs/sort.h}}
+\doxysubsubsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+typedef int(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sort_8h_aa219f7716ca95fc67d02c952391ace7e}{cmpr}}) (const void \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sort_8h_adb8a74c85ca5a2d1868fbf4510418188}{shaker\+\_\+sort}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, \mbox{\hyperlink{sort_8h_aa219f7716ca95fc67d02c952391ace7e}{cmpr}} compare)
+\begin{DoxyCompactList}\small\item\em Сортировка перемешиванием -\/ модификация пузырьковой сортировки\+: проходит по массиву слева направо и справа налево, для оптимизации каждый раз изменяется начало и конец сортировки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{sort_8h_doc-typedef-members}
+\doxysubsection{Типы}
+\Hypertarget{sort_8h_aa219f7716ca95fc67d02c952391ace7e}\index{sort.h@{sort.h}!cmpr@{cmpr}}
+\index{cmpr@{cmpr}!sort.h@{sort.h}}
+\doxysubsubsection{\texorpdfstring{cmpr}{cmpr}}
+{\footnotesize\ttfamily \label{sort_8h_aa219f7716ca95fc67d02c952391ace7e} 
+typedef int(\texorpdfstring{$\ast$}{*} cmpr) (const void \texorpdfstring{$\ast$}{*}, const void \texorpdfstring{$\ast$}{*})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{sort_8h_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{sort_8h_adb8a74c85ca5a2d1868fbf4510418188}\index{sort.h@{sort.h}!shaker\_sort@{shaker\_sort}}
+\index{shaker\_sort@{shaker\_sort}!sort.h@{sort.h}}
+\doxysubsubsection{\texorpdfstring{shaker\_sort()}{shaker\_sort()}}
+{\footnotesize\ttfamily \label{sort_8h_adb8a74c85ca5a2d1868fbf4510418188} 
+void shaker\+\_\+sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{\mbox{\hyperlink{sort_8h_aa219f7716ca95fc67d02c952391ace7e}{cmpr}}}]{compare}{}\end{DoxyParamCaption})}
+
+
+
+Сортировка перемешиванием -\/ модификация пузырьковой сортировки\+: проходит по массиву слева направо и справа налево, для оптимизации каждый раз изменяется начало и конец сортировки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em d} & \\
+\hline
+{\em compare} & \\
+\hline
+\end{DoxyParams}
