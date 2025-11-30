@@ -39,4 +39,4 @@ typedef struct {
  * @param params указатель на структуру, которая хранит параметры
  * @return int 0, если выполнено успешно, 1, если ошибка, 2, если запрошена справка
  */
-int parse_args(int argc, char* argv[], arg_params params);
+int parse_args(int argc, char* argv[], arg_params* params);
