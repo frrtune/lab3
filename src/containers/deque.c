@@ -187,6 +187,7 @@ void deque_free(deque* d) {
     node* current_node = d->head;
     while (current_node != NULL) {
         node* next_node = current_node->next;
+        free(current_node->data);
         free(current_node);
         current_node = next_node;
     }
