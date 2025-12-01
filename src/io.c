@@ -128,7 +128,7 @@ int read_csv(const char* file_name, deque* deque) {
             token = strtok(NULL, ",");
         }
         if (field != 9) {
-            fprintf(stderr, "Too few fields");
+            fprintf(stderr, "Too few fields\n");
             free(h);
             if (file_name) fclose(file_ptr);
             return 1;
@@ -152,7 +152,7 @@ int write_csv(const char* file_name, deque* deque) {
     if (file_name) {
         file_ptr = fopen(file_name, "w");
         if (file_ptr == NULL) {
-            fprintf(stderr, "Cannot create file");
+            fprintf(stderr, "Cannot create file\n");
             return 1;
         }
     }
