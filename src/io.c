@@ -72,15 +72,78 @@ int read_csv(const char* file_name, deque* deque) {
                     } else if (strcmp(token, "NO") == 0) {
                         h->is_elevator = NO;
                     } else {
-                        fprintf(stderr, "Invalid value");
+                        fprintf(stderr, "Invalid elevator value");
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
                     }
                     break;
                 case 5:
+                    if (strcmp(token, "YES") == 0) {
+                        h->is_chute = YES;
+                    } else if (strcmp(token, "NO") == 0) {
+                        h->is_chute = NO;
+                    } else {
+                        fprintf(stderr, "Invalid chute value");
+                        free(h);
+                        if (file_name) fclose(file_ptr);
+                        return 1;
+                    }
+                    break;
+                case 6:
+                    h->apartment_count = (unsigned int)atoi(token);
+                    if (h->apartment_count == 0) { 
+                        fprintf(stderr, "Invalid apartment count value");
+                        free(h);
+                        if (file_name != NULL) fclose(file_ptr);
+                        return 1;
+                    }
+                    break;
+                case 7:
+                    h->floor_count = (unsigned int)atoi(token);
+                    if (h->floor_count == 0) { 
+                        fprintf(stderr, "Invalid floor count value");
+                        free(h);
+                        if (file_name != NULL) fclose(file_ptr);
+                        return 1;
+                    }
+                    break;
+                case 8:
+                    h->avg_area = (float)atof(token);
+                    if (h->avg_area <= 0) { 
+                        fprintf(stderr, "Invalid average area value");
+                        free(h);
+                        if (file_name != NULL) fclose(file_ptr);
+                        return 1;
+                    }
+                    break;
+                default:
+                    fprintf(stderr, "Too many fields");
+                    free(h);
+                    if (file_name) fclose(file_ptr);
+                    return 1;
             }
+            field++;
+            token = strtok(NULL, ",");
         }
-    }
+        if (field != 9) {
+            fprintf(stderr, "Too few fields");
+            free(h);
+            if (file_name) fclose(file_ptr);
+            return 1;
+        }
+        deque_push_back(deque, h);
+        }
+        if (ferror(file_ptr)) {
+            fprintf(stderr, "Error reading file\n");
+            if (file_name) fclose(file_ptr);
+            return 1;
+        }
+    
+        if (file_name) {
+            fclose(file_ptr);
+        }
+        return 0;
 }
+
 
