@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define EPS 0.001f
 
 int read_csv(const char* file_name, deque* deque) {
     FILE* file_ptr = stdin;
@@ -110,7 +111,7 @@ int read_csv(const char* file_name, deque* deque) {
                     break;
                 case 8:
                     h->avg_area = (float)atof(token);
-                    if (h->avg_area <= 0) { 
+                    if (h->avg_area <= EPS) { 
                         fprintf(stderr, "Invalid average area value at line %f: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
@@ -145,6 +146,41 @@ int read_csv(const char* file_name, deque* deque) {
         }
         return 0;
 }
+
+/*int write_csv(const char* file_name, deque* deque) {
+    FILE* file_ptr = stdout;
+    if (file_name) {
+        file_ptr = fopen(file_name, "w");
+        if (file_ptr == NULL) {
+            fprintf(stderr, "Cannot create file");
+            return 1;
+        }
+    }
+    size_t size = deque_get_size(deque);
+    for (size_t i = 0; i < size; i++) {
+        house* h = (house*)deque_get_elem(deque, i);
+        if (h == NULL) {
+            fprintf(stderr, "Element at index %zu points to NULL\n", i);
+            if (file_name) fclose(file_ptr);
+            return 1;
+        }
+        const char* type_str;
+        switch (h->type) {
+            case PANEL: 
+                type_str = "PANEL"; 
+                break;
+            case BRICK: 
+                type_str = "BRICK"; 
+                break;
+            case MONO:  
+                type_str = "MONO"; 
+                break;
+            default:    
+                type_str = "UNKNOWN";
+        }
+        fprintf(file_name, "%s,%s,%s,%u,%s,%s,%u,%u,%.2f\n")
+    }
+}*/
 
 
 
