@@ -27,7 +27,7 @@ int read_csv(const char* file_name, deque* deque) {
         }
         house* h = malloc(sizeof(house));
         if (h == NULL) {
-            fprintf(stderr, "Memory allocation failed");
+            fprintf(stderr, "Memory allocation failed\n");
             if (file_name != NULL) fclose(file_ptr);
             return 1;
         }
@@ -60,7 +60,7 @@ int read_csv(const char* file_name, deque* deque) {
                 case 3:
                     h->year = (unsigned int)atoi(token);
                     if (h->year < 1500 || h->year > 3000) {
-                        fprintf(stderr, "Invalid year");
+                        fprintf(stderr, "Invalid year at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
@@ -72,7 +72,7 @@ int read_csv(const char* file_name, deque* deque) {
                     } else if (strcmp(token, "NO") == 0) {
                         h->is_elevator = NO;
                     } else {
-                        fprintf(stderr, "Invalid elevator value");
+                        fprintf(stderr, "Invalid elevator value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
@@ -84,7 +84,7 @@ int read_csv(const char* file_name, deque* deque) {
                     } else if (strcmp(token, "NO") == 0) {
                         h->is_chute = NO;
                     } else {
-                        fprintf(stderr, "Invalid chute value");
+                        fprintf(stderr, "Invalid chute value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name) fclose(file_ptr);
                         return 1;
@@ -93,7 +93,7 @@ int read_csv(const char* file_name, deque* deque) {
                 case 6:
                     h->apartment_count = (unsigned int)atoi(token);
                     if (h->apartment_count == 0) { 
-                        fprintf(stderr, "Invalid apartment count value");
+                        fprintf(stderr, "Invalid apartment count value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
@@ -102,7 +102,7 @@ int read_csv(const char* file_name, deque* deque) {
                 case 7:
                     h->floor_count = (unsigned int)atoi(token);
                     if (h->floor_count == 0) { 
-                        fprintf(stderr, "Invalid floor count value");
+                        fprintf(stderr, "Invalid floor count value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
@@ -111,14 +111,14 @@ int read_csv(const char* file_name, deque* deque) {
                 case 8:
                     h->avg_area = (float)atof(token);
                     if (h->avg_area <= 0) { 
-                        fprintf(stderr, "Invalid average area value");
+                        fprintf(stderr, "Invalid average area value at line %f: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
                     }
                     break;
                 default:
-                    fprintf(stderr, "Too many fields");
+                    fprintf(stderr, "Too many fields\n");
                     free(h);
                     if (file_name) fclose(file_ptr);
                     return 1;
@@ -145,5 +145,6 @@ int read_csv(const char* file_name, deque* deque) {
         }
         return 0;
 }
+
 
 
