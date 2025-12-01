@@ -45,7 +45,7 @@ node* deque_prev(node* n) {
     return n->prev;
 }
 
-void deque_add_begin(deque* d, void* data){
+void deque_push_front(deque* d, void* data){
     if (d == NULL) return;
     node* new_node = malloc(sizeof(node));
     new_node->data = data;
@@ -61,7 +61,7 @@ void deque_add_begin(deque* d, void* data){
     d->size++;
 }
 
-void deque_add_end(deque* d, void* data){
+void deque_push_back(deque* d, void* data){
     if (d == NULL) return;
     node* new_node = malloc(sizeof(node));
     new_node->data = data;
@@ -77,14 +77,14 @@ void deque_add_end(deque* d, void* data){
     d->size++;
 }
 
-void deque_add_middle(deque* d, void* data, size_t index){
+void deque_insert(deque* d, void* data, size_t index){
     if (d == NULL || index >= d->size) return;
     if (index == 0) {
-        deque_add_begin(d, data);
+        deque_push_front(d, data);
         return;
     }
     if (index == d->size) {
-        deque_add_end(d, data);
+        deque_push_back(d, data);
         return;
     }
 
@@ -165,7 +165,7 @@ deque* arr_to_deque(void** arr, size_t size) {
     deque* d = deque_init();
     if (d == NULL) return NULL;
     for (size_t i = 0; i < size; i++) {
-        deque_add_end(d, arr[i]);
+        deque_push_back(d, arr[i]);
     }
     return d;
 }
