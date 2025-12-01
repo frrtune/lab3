@@ -27,9 +27,34 @@ deque* deque_init();
  * @return size_t 
  */
 size_t deque_get_size(const deque* d);
+/**
+ * @brief Получение элемента по индексу
+ * 
+ * @param d 
+ * @param index 
+ * @return void* 
+ */
 void* deque_get_elem(deque* d, size_t index);
+/**
+ * @brief Получение указателя на начало
+ * 
+ * @param  
+ * @return node* 
+ */
 node* deque_begin(deque* d);
+/**
+ * @brief Получение указателя на конец
+ * 
+ * @param d 
+ * @return node* 
+ */
 node* deque_end(deque* d);
+/**
+ * @brief Добавление элемента в начало 
+ * 
+ * @param n 
+ * @return node* 
+ */
 node* deque_next(node* n);
 node* deque_prev(node* n);
 void deque_push_front(deque* d, void* data);
