@@ -16,6 +16,7 @@ typedef struct House {
     house_type type;
     unsigned int year;
     bool is_elevator;
+    bool is_chute;
     unsigned int apartment_count;
     unsigned int floor_count;
     float avg_area;

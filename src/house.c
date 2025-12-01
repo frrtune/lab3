@@ -9,6 +9,9 @@ int house_compare(const void* h1, const void* h2) {
     if (house1->is_elevator != house2->is_elevator) {
         return house2->is_elevator - house1->is_elevator;
     }
+    if (house1->is_chute != house2->is_chute) {
+        return house2->is_chute - house1->is_chute;
+    }
     if (house1->type != house2->type) {
         if (house1->type == BRICK) return -1;
         if (house2->type == BRICK) return 1;
