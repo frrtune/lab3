@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define EPS 0.001f
+#define EPS 0.0001f
 
 int read_csv(const char* file_name, deque* deque) {
     FILE* file_ptr = stdin;
@@ -112,7 +112,7 @@ int read_csv(const char* file_name, deque* deque) {
                 case 8:
                     h->avg_area = (float)atof(token);
                     if (h->avg_area <= EPS) { 
-                        fprintf(stderr, "Invalid average area value at line %f: %s\n", line_count, token);
+                        fprintf(stderr, "Invalid average area value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
                         return 1;
@@ -147,7 +147,7 @@ int read_csv(const char* file_name, deque* deque) {
         return 0;
 }
 
-/*int write_csv(const char* file_name, deque* deque) {
+int write_csv(const char* file_name, deque* deque) {
     FILE* file_ptr = stdout;
     if (file_name) {
         file_ptr = fopen(file_name, "w");
@@ -178,9 +178,26 @@ int read_csv(const char* file_name, deque* deque) {
             default:    
                 type_str = "UNKNOWN";
         }
-        fprintf(file_name, "%s,%s,%s,%u,%s,%s,%u,%u,%.2f\n")
+        const char* elevator_str;
+        if (h->is_elevator == YES) {
+            elevator_str = "YES";
+        } else {
+            elevator_str = "NO";
+        }
+        const char* chute_str;  
+        if (h->is_chute == YES) {
+            chute_str = "YES";
+        } else {
+            chute_str = "NO";
+        }
+        fprintf(file_ptr, "%s,%s,%s,%u,%s,%s,%u,%u,%.2f\n", h->builder, h->district, type_str, h->year, elevator_str, chute_str,
+             h->apartment_count, h->floor_count, h->avg_area);
     }
-}*/
+    if (file_name) {
+        fclose(file_ptr);
+    }
+    return 0;
+}
 
 
 
