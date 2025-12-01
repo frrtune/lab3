@@ -100,7 +100,7 @@ int parse_args(int argc, char* argv[], arg_params* params) {
         } else if (len > 1 && curr_arg[0] == '-') {
             char* arg_name = curr_arg + 1;
             argument_t *found_arg = NULL;
-            for (const argument_t *arg = arguments; arg->short_name != NULL; arg++){
+            for (const argument_t *arg = arguments; arg->long_name != NULL; arg++){
                 if ((arg_name[0] == arg->short_name) && (strlen(arg_name) == 1)){
                     found_arg = (argument_t *)arg;
                     break;
@@ -167,4 +167,5 @@ int parse_args(int argc, char* argv[], arg_params* params) {
             }
         }
     }
+    return 0;
 }
