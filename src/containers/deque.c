@@ -154,7 +154,7 @@ void deque_swap(deque* d, size_t index1, size_t index2) {
     node* node1 = d->head;
     for (size_t i = 0; i < index1; i++) node1 = node1->next;
     node* node2 = d->head;
-    for (size_t i = 0; i < index1; i++) node2 = node2->next;
+    for (size_t i = 0; i < index2; i++) node2 = node2->next;
     void* temp_data = node1->data;
     node1->data = node2->data;
     node2->data = temp_data;

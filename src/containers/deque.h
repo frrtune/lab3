@@ -50,12 +50,18 @@ node* deque_begin(deque* d);
  */
 node* deque_end(deque* d);
 /**
- * @brief Добавление элемента в начало 
+ * @brief Получение указателя на следующий элемент
  * 
  * @param n 
  * @return node* 
  */
 node* deque_next(node* n);
+/**
+ * @brief олучение указателя на предыдущий элемент
+ * 
+ * @param n 
+ * @return node* 
+ */
 node* deque_prev(node* n);
 void deque_push_front(deque* d, void* data);
 void deque_push_back(deque* d, void* data);
