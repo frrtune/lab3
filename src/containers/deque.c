@@ -193,3 +193,11 @@ void deque_free(deque* d) {
     }
     free(d);
 }
+
+void reverse_deque(deque* d) {
+    if (d == NULL || deque_get_size(d) <= 1) return;
+    size_t size = deque_get_size(d);
+    for (size_t i = 0; i < size / 2; i++) {
+        deque_swap(d, i, size - i - 1);
+    }
+}

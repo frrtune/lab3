@@ -133,3 +133,9 @@ void** deque_to_arr(deque* d);
  * @param d 
  */
 void deque_free(deque* d);
+/**
+ * @brief Записывает элементы двухсторонней очереди в обратном порядке
+ * 
+ * @param d 
+ */
+void reverse_deque(deque* d);
