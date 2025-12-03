@@ -148,6 +148,7 @@ int read_csv(const char* file_name, deque* deque) {
 }
 
 int write_csv(const char* file_name, deque* deque) {
+    printf("start\n");
     FILE* file_ptr = stdout;
     if (file_name) {
         file_ptr = fopen(file_name, "w");
@@ -196,6 +197,7 @@ int write_csv(const char* file_name, deque* deque) {
     if (file_name) {
         fclose(file_ptr);
     }
+    printf("end\n");
     return 0;
 }
 

@@ -15,6 +15,7 @@ int main(int argc, char* argv[]){
     if (d == NULL) return 1;
     switch (params.mode) {
         case GENERATE:
+            printf("Generating in progress...");
             ret = generate_house(d, params.str_count);
             if (ret == 1) return 1;
             else {

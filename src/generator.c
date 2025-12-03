@@ -32,6 +32,7 @@ static float random_float(float min, float max) {
 }
 
 int generate_house(deque* d, int n) {
+    printf("start\n");
     if (d == NULL) {
         fprintf(stderr, "Deque is NULL\n");
         return 1;
@@ -70,5 +71,7 @@ int generate_house(deque* d, int n) {
         h->avg_area = random_float(15.0f, 200.0f);
         deque_push_back(d, h);
     }
+    printf("end\n");
     return 0;
 }
+

@@ -1,4 +1,5 @@
 #include "deque.h"
+#include <stdlib.h>
 
 deque* deque_init(){
     deque* new_deque = malloc(sizeof(deque));
