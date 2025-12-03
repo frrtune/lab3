@@ -199,5 +199,64 @@ int write_csv(const char* file_name, deque* deque) {
     return 0;
 }
 
+int print_table(const char* file_name, deque* d) {
+    FILE* file_ptr = stdout;
+    if (file_name) {
+        file_ptr = fopen(file_name, "w");
+        if (file_ptr == NULL) {
+            fprintf(stderr, "Cannot create file\n");
+            return 1;
+        }
+    }
+    size_t size = deque_get_size(d);
+    if (size == 0) {
+        fprintf(file_ptr, "Nothing to print\n");
+        if (file_name) fclose(file_ptr);
+        return 0;
+    }
+    fprintf(file_ptr, "Builder District Type Year Elev Chute Apart Floors Area\n");
+    for (size_t i = 0; i < size; i++) {
+        house* h = deque_get_elem(d, i);
+        if (h == NULL) continue;
+        const char* type_str;
+        switch (h->type) {
+            case PANEL: 
+                type_str = "PANEL"; 
+                break;
+            case BRICK: 
+                type_str = "BRICK"; 
+                break;
+            case MONO:  
+                type_str = "MONO"; 
+                break;
+            default:    
+                type_str = "-";
+        }
+        const char* elevator_str;
+        if (h->is_elevator == YES) {
+            elevator_str = "YES";
+        } else {
+            elevator_str = "NO";
+        }
+        const char* chute_str;  
+        if (h->is_chute == YES) {
+            chute_str = "YES";
+        } else {
+            chute_str = "NO";
+        }
+        fprintf(file_ptr, "%s %s %s %u %s %s %u %u %.2f\n", h->builder, h->district, type_str, h->year, 
+            elevator_str, chute_str, h->apartment_count, h->floor_count, h->avg_area);
+    }
+    if (ferror(file_ptr)) {
+        fprintf(stderr, "Error reading file\n");
+        if (file_name) fclose(file_ptr);
+        return 1;
+    }
+    if (file_name) {
+        fclose(file_ptr);
+    }
+    return 0;
+}
+
 
 
