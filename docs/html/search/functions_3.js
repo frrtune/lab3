@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shaker_5fsort_0',['shaker_sort',['../sort_8c.html#adb8a74c85ca5a2d1868fbf4510418188',1,'shaker_sort(deque *d, cmpr compare):&#160;sort.c'],['../sort_8h.html#adb8a74c85ca5a2d1868fbf4510418188',1,'shaker_sort(deque *d, cmpr compare):&#160;sort.c']]]
+  ['house_5fcompare_0',['house_compare',['../house_8c.html#a121cd15116f0c8f7d4974991907c90be',1,'house_compare(const void *h1, const void *h2):&#160;house.c'],['../house_8h.html#a121cd15116f0c8f7d4974991907c90be',1,'house_compare(const void *h1, const void *h2):&#160;house.c']]]
 ];

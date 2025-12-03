@@ -1,0 +1,63 @@
+\doxysection{Файл src/generator.c}
+\hypertarget{generator_8c}{}\label{generator_8c}\index{src/generator.c@{src/generator.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}generator.\+h"{}}\newline
+{\ttfamily \#include "{}house.\+h"{}}\newline
+{\ttfamily \#include "{}containers/deque.\+h"{}}\newline
+\doxysubsubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{generator_8c_ae3010bc5c78493a5623d95cb0eed1229}{BUILDERS\+\_\+\+COUNT}}~(sizeof(builders) / sizeof(builders\mbox{[}0\mbox{]}))
+\item 
+\#define \mbox{\hyperlink{generator_8c_ae5994d6b13980ca2addb392f6f2b2ef3}{DISTRICTS\+\_\+\+COUNT}}~(sizeof(districts) / sizeof(districts\mbox{[}0\mbox{]}))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{generator_8c_a11972d2e7dc2d11e471e38d1a5fa730e}{generate\+\_\+house}} (\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d, int n)
+\begin{DoxyCompactList}\small\item\em Генерирует "{}дома"{} с рандомными параметрами \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{generator_8c_doc-define-members}
+\doxysubsection{Макросы}
+\Hypertarget{generator_8c_ae3010bc5c78493a5623d95cb0eed1229}\index{generator.c@{generator.c}!BUILDERS\_COUNT@{BUILDERS\_COUNT}}
+\index{BUILDERS\_COUNT@{BUILDERS\_COUNT}!generator.c@{generator.c}}
+\doxysubsubsection{\texorpdfstring{BUILDERS\_COUNT}{BUILDERS\_COUNT}}
+{\footnotesize\ttfamily \label{generator_8c_ae3010bc5c78493a5623d95cb0eed1229} 
+\#define BUILDERS\+\_\+\+COUNT~(sizeof(builders) / sizeof(builders\mbox{[}0\mbox{]}))}
+
+\Hypertarget{generator_8c_ae5994d6b13980ca2addb392f6f2b2ef3}\index{generator.c@{generator.c}!DISTRICTS\_COUNT@{DISTRICTS\_COUNT}}
+\index{DISTRICTS\_COUNT@{DISTRICTS\_COUNT}!generator.c@{generator.c}}
+\doxysubsubsection{\texorpdfstring{DISTRICTS\_COUNT}{DISTRICTS\_COUNT}}
+{\footnotesize\ttfamily \label{generator_8c_ae5994d6b13980ca2addb392f6f2b2ef3} 
+\#define DISTRICTS\+\_\+\+COUNT~(sizeof(districts) / sizeof(districts\mbox{[}0\mbox{]}))}
+
+
+
+\label{doc-func-members}
+\Hypertarget{generator_8c_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{generator_8c_a11972d2e7dc2d11e471e38d1a5fa730e}\index{generator.c@{generator.c}!generate\_house@{generate\_house}}
+\index{generate\_house@{generate\_house}!generator.c@{generator.c}}
+\doxysubsubsection{\texorpdfstring{generate\_house()}{generate\_house()}}
+{\footnotesize\ttfamily \label{generator_8c_a11972d2e7dc2d11e471e38d1a5fa730e} 
+int generate\+\_\+house (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Генерирует "{}дома"{} с рандомными параметрами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em d} & \\
+\hline
+{\em n} & количество домов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int 0 -\/ успех, 1-\/ ошибка 
+\end{DoxyReturn}

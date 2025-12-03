@@ -1,0 +1,76 @@
+\doxysection{Файл src/io.h}
+\hypertarget{io_8h}{}\label{io_8h}\index{src/io.h@{src/io.h}}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{io_8h_a7a72d4e652b976f3bb46d6510969ce18}{read\+\_\+csv}} (const char \texorpdfstring{$\ast$}{*}file\+\_\+name, \mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}})
+\begin{DoxyCompactList}\small\item\em Читает данные из CSV файла, генерирует "{}дома"{} и записывает их в двухстороннюю очередь \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{io_8h_a3ba41209631114345e8f534bbc41a546}{write\+\_\+csv}} (const char \texorpdfstring{$\ast$}{*}file\+\_\+name, \mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}})
+\begin{DoxyCompactList}\small\item\em Записывает элементы двухсторонней очереди ("{}дома"{}) в виде строк в CSV файл \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{io_8h_ac0250708304b0b7d0f0b2c0612f2152e}{print\+\_\+table}} (const char \texorpdfstring{$\ast$}{*}file\+\_\+name, \mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}d)
+\begin{DoxyCompactList}\small\item\em Создает таблицу с фиксированной шириной с данными о "{}домах"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{io_8h_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{io_8h_ac0250708304b0b7d0f0b2c0612f2152e}\index{io.h@{io.h}!print\_table@{print\_table}}
+\index{print\_table@{print\_table}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{print\_table()}{print\_table()}}
+{\footnotesize\ttfamily \label{io_8h_ac0250708304b0b7d0f0b2c0612f2152e} 
+int print\+\_\+table (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+\_\+name}{, }\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Создает таблицу с фиксированной шириной с данными о "{}домах"{}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+\_\+name} & \\
+\hline
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int 
+\end{DoxyReturn}
+\Hypertarget{io_8h_a7a72d4e652b976f3bb46d6510969ce18}\index{io.h@{io.h}!read\_csv@{read\_csv}}
+\index{read\_csv@{read\_csv}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{read\_csv()}{read\_csv()}}
+{\footnotesize\ttfamily \label{io_8h_a7a72d4e652b976f3bb46d6510969ce18} 
+int read\+\_\+csv (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+\_\+name}{, }\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{deque}{}\end{DoxyParamCaption})}
+
+
+
+Читает данные из CSV файла, генерирует "{}дома"{} и записывает их в двухстороннюю очередь 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+\_\+name} & \\
+\hline
+{\em deque} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int 0 -\/ успех, 1 -\/ ошибка 
+\end{DoxyReturn}
+\Hypertarget{io_8h_a3ba41209631114345e8f534bbc41a546}\index{io.h@{io.h}!write\_csv@{write\_csv}}
+\index{write\_csv@{write\_csv}!io.h@{io.h}}
+\doxysubsubsection{\texorpdfstring{write\_csv()}{write\_csv()}}
+{\footnotesize\ttfamily \label{io_8h_a3ba41209631114345e8f534bbc41a546} 
+int write\+\_\+csv (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+\_\+name}{, }\item[{\mbox{\hyperlink{deque_8h_aa3dbaddafc457194d17697f2e42ca57f}{deque}} \texorpdfstring{$\ast$}{*}}]{deque}{}\end{DoxyParamCaption})}
+
+
+
+Записывает элементы двухсторонней очереди ("{}дома"{}) в виде строк в CSV файл 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+\_\+name} & \\
+\hline
+{\em deque} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+int 
+\end{DoxyReturn}
