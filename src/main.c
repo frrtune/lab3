@@ -34,5 +34,11 @@ int main(int argc, char* argv[]){
         case PRINT:
             ret = read_csv(params.input_file, d);
             if (ret == 1) return 1;
+            ret = print_table(params.output_file, d);
+            break;
+        default:
+            fprintf(stderr, "No mode has been chosen\n");
+            return 1;
     }
+    return ret;
 }
