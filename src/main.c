@@ -4,6 +4,7 @@
 #include "containers/deque.h"
 #include "generator.h"
 #include "io.h"
+#include "house.h"
 
 int main(int argc, char* argv[]){
     arg_params params;
@@ -21,5 +22,17 @@ int main(int argc, char* argv[]){
             }
         case SORT:
             ret = read_csv(params.input_file, d);
+            if (ret == 1) return 1;
+            else {
+                shaker_sort(d, house_compare);
+                if (params.asc_or_desc == 1) {
+                    reverse_deque(d);
+                }
+                ret = write_csv(params.output_file, d);
+                break;
+            }
+        case PRINT:
+            ret = read_csv(params.input_file, d);
+            if (ret == 1) return 1;
     }
 }
