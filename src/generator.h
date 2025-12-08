@@ -1,14 +1,10 @@
 #pragma once
 
-#include "containers/deque.h"
-
 /**
- * @brief Генерирует "дома" с рандомными параметрами
+ * @brief Генерирует "дом" с произвольными данными
  * 
- * @param d 
- * @param n количество домов
- * @return int 0 - успех, 1- ошибка
+ * @return house* 
  */
-int generate_house(deque* d, int n);
+house* generate_house();
 
     

@@ -63,29 +63,46 @@ CMAKE_BINARY_DIR = D:\myprograms\lab3\build
 
 # The main recursive "all" target.
 all: CMakeFiles/lab3.dir/all
+all: src/containers/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/containers/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lab3.dir/clean
+clean: src/containers/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/containers
+
+# Recursive "all" directory target.
+src/containers/all: src/containers/CMakeFiles/deque.dir/all
+.PHONY : src/containers/all
+
+# Recursive "preinstall" directory target.
+src/containers/preinstall:
+.PHONY : src/containers/preinstall
+
+# Recursive "clean" directory target.
+src/containers/clean: src/containers/CMakeFiles/deque.dir/clean
+.PHONY : src/containers/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lab3.dir
 
 # All Build rule for target.
-CMakeFiles/lab3.dir/all:
+CMakeFiles/lab3.dir/all: src/containers/CMakeFiles/deque.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target lab3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target lab3"
 .PHONY : CMakeFiles/lab3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/lab3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
 .PHONY : CMakeFiles/lab3.dir/rule
@@ -98,6 +115,32 @@ lab3: CMakeFiles/lab3.dir/rule
 CMakeFiles/lab3.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/clean
 .PHONY : CMakeFiles/lab3.dir/clean
+
+#=============================================================================
+# Target rules for target src/containers/CMakeFiles/deque.dir
+
+# All Build rule for target.
+src/containers/CMakeFiles/deque.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=1,2 "Built target deque"
+.PHONY : src/containers/CMakeFiles/deque.dir/all
+
+# Build rule for subdir invocation for target.
+src/containers/CMakeFiles/deque.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/containers/CMakeFiles/deque.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
+.PHONY : src/containers/CMakeFiles/deque.dir/rule
+
+# Convenience name for target.
+deque: src/containers/CMakeFiles/deque.dir/rule
+.PHONY : deque
+
+# clean rule for target.
+src/containers/CMakeFiles/deque.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/clean
+.PHONY : src/containers/CMakeFiles/deque.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

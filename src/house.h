@@ -37,3 +37,10 @@ typedef struct House {
  * @return int отрицательное число, если h1 < h2, положительное, если h1 > h2, 0, если h1 = h2
  */
 int house_compare(const void* h1, const void* h2);
+
+/**
+ * @brief Генерирует "дом" с произвольными данными
+ * 
+ * @return house* 
+ */
+house* generate_house();

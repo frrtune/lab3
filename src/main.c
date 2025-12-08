@@ -15,12 +15,16 @@ int main(int argc, char* argv[]){
     if (d == NULL) return 1;
     switch (params.mode) {
         case GENERATE:
-            printf("Generating in progress...");
-            ret = generate_house(d, params.str_count);
-            if (ret == 1) return 1;
-            else {
-                ret = write_csv(params.output_file, d);
+            for (size_t i = 0; i < params.str_count; i++) {
+                house* h = generate_house();
+                if (h == NULL) {
+                    fprintf(stderr, "Failed to generate house\n");
+                    return 1;
+                }
+                deque_push_back(d, h);
             }
+            ret = write_csv(params.output_file, d);
+            break;
         case SORT:
             ret = read_csv(params.input_file, d);
             if (ret == 1) return 1;

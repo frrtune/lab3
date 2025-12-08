@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/myprograms/lab3/args/args.c" "CMakeFiles/lab3.dir/args/args.c.obj" "gcc" "CMakeFiles/lab3.dir/args/args.c.obj.d"
   "D:/myprograms/lab3/src/algs/sort.c" "CMakeFiles/lab3.dir/src/algs/sort.c.obj" "gcc" "CMakeFiles/lab3.dir/src/algs/sort.c.obj.d"
-  "D:/myprograms/lab3/src/containers/deque.c" "CMakeFiles/lab3.dir/src/containers/deque.c.obj" "gcc" "CMakeFiles/lab3.dir/src/containers/deque.c.obj.d"
   "D:/myprograms/lab3/src/generator.c" "CMakeFiles/lab3.dir/src/generator.c.obj" "gcc" "CMakeFiles/lab3.dir/src/generator.c.obj.d"
   "D:/myprograms/lab3/src/house.c" "CMakeFiles/lab3.dir/src/house.c.obj" "gcc" "CMakeFiles/lab3.dir/src/house.c.obj.d"
   "D:/myprograms/lab3/src/io.c" "CMakeFiles/lab3.dir/src/io.c.obj" "gcc" "CMakeFiles/lab3.dir/src/io.c.obj.d"

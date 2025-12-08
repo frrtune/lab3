@@ -23,7 +23,7 @@ int read_csv(const char* file_name, deque* deque) {
         while (*ptr == ' ' || *ptr == '\t') ptr++;
         if (*ptr == '\0' || *ptr == '\n') continue;
         size_t len = strlen(ptr);
-         if (len > 0 && ptr[len-1] == '\n') {
+        if (len > 0 && ptr[len-1] == '\n') {
             ptr[len-1] = '\0';
         }
         house* h = malloc(sizeof(house));
@@ -92,7 +92,9 @@ int read_csv(const char* file_name, deque* deque) {
                     }
                     break;
                 case 6:
-                    h->apartment_count = (unsigned int)atoi(token);
+                    // h->apartment_count = (unsigned int)atoi(token);
+                    h->apartment_count = strtoul(token, token+strlen(token), 10);
+                    if (errno >0 ) {/**/}
                     if (h->apartment_count == 0) { 
                         fprintf(stderr, "Invalid apartment count value at line %d: %s\n", line_count, token);
                         free(h);
@@ -191,7 +193,7 @@ int write_csv(const char* file_name, deque* deque) {
         } else {
             chute_str = "NO";
         }
-        fprintf(file_ptr, "%s,%s,%s,%u,%s,%s,%u,%u,%.2f\n", h->builder, h->district, type_str, h->year, elevator_str, chute_str,
+        fprintf(file_ptr, "\"%s\",%s,%s,%u,%s,%s,%u,%u,%.2f\n", h->builder, h->district, type_str, h->year, elevator_str, chute_str,
              h->apartment_count, h->floor_count, h->avg_area);
     }
     if (file_name) {

@@ -128,6 +128,19 @@ lab3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/build
 .PHONY : lab3/fast
 
+#=============================================================================
+# Target rules for targets named deque
+
+# Build rule for target.
+deque: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 deque
+.PHONY : deque
+
+# fast build rule for target.
+deque/fast:
+	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/build
+.PHONY : deque/fast
+
 args/args.obj: args/args.c.obj
 .PHONY : args/args.obj
 
@@ -175,30 +188,6 @@ src/algs/sort.s: src/algs/sort.c.s
 src/algs/sort.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/src/algs/sort.c.s
 .PHONY : src/algs/sort.c.s
-
-src/containers/deque.obj: src/containers/deque.c.obj
-.PHONY : src/containers/deque.obj
-
-# target to build an object file
-src/containers/deque.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/src/containers/deque.c.obj
-.PHONY : src/containers/deque.c.obj
-
-src/containers/deque.i: src/containers/deque.c.i
-.PHONY : src/containers/deque.i
-
-# target to preprocess a source file
-src/containers/deque.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/src/containers/deque.c.i
-.PHONY : src/containers/deque.c.i
-
-src/containers/deque.s: src/containers/deque.c.s
-.PHONY : src/containers/deque.s
-
-# target to generate assembly for a file
-src/containers/deque.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/src/containers/deque.c.s
-.PHONY : src/containers/deque.c.s
 
 src/generator.obj: src/generator.c.obj
 .PHONY : src/generator.obj
@@ -304,6 +293,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... deque
 	@echo ... lab3
 	@echo ... args/args.obj
 	@echo ... args/args.i
@@ -311,9 +301,6 @@ help:
 	@echo ... src/algs/sort.obj
 	@echo ... src/algs/sort.i
 	@echo ... src/algs/sort.s
-	@echo ... src/containers/deque.obj
-	@echo ... src/containers/deque.i
-	@echo ... src/containers/deque.s
 	@echo ... src/generator.obj
 	@echo ... src/generator.i
 	@echo ... src/generator.s

@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stddef.h>
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
@@ -31,47 +32,45 @@ static float random_float(float min, float max) {
     return (float)random_val / 100.0f;
 }
 
-int generate_house(deque* d, int n) {
-    printf("start\n");
-    if (d == NULL) {
+house* generate_house() {
+    /*if (d == NULL) {
         fprintf(stderr, "Deque is NULL\n");
         return 1;
     }
+    // assert(d != NULL);
     if (n <= 0) {
         fprintf(stderr, "N must be positive\n");
         return 1;
-    }
+    }*/
     srand(time(NULL));
-    for (unsigned int i = 0; i < n; i++) {
-        house* h = malloc(sizeof(house));
-        if (h == NULL) {
-            fprintf(stderr, "Memory has not been allocated\n");
-            return 1;
-        }
-        const char* builder = random_string(builders, BUILDERS_COUNT);
-        strcpy(h->builder, builder);
-        const char* district = random_string(districts, DISTRICTS_COUNT);
-        strcpy(h->district, district);
-        h->type = rand() % 3;
-        h->year = (unsigned int)random_int(1950, 2025);
-        unsigned int elevator_probability = rand() % 100;
-        if (elevator_probability < 50) {
-            h->is_elevator = YES;
-        } else {
-            h->is_elevator = NO;
-        }   
-        unsigned int chute_probability = rand() % 100;
-        if (chute_probability < 50) {
-            h->is_chute = YES;
-        } else {
-            h->is_chute = NO;
-        }
-        h->apartment_count = random_int(10, 500);
-        h->floor_count = random_int(2, 30);
-        h->avg_area = random_float(15.0f, 200.0f);
-        deque_push_back(d, h);
+    
+    house* h = malloc(sizeof(house));
+    if (h == NULL) {
+        fprintf(stderr, "Memory has not been allocated\n");
+        return NULL;
     }
-    printf("end\n");
-    return 0;
+    const char* builder = random_string(builders, BUILDERS_COUNT);
+    strcpy(h->builder, builder);
+    const char* district = random_string(districts, DISTRICTS_COUNT);
+    strcpy(h->district, district);
+    h->type = rand() % 3;
+    h->year = (unsigned int)random_int(1950, 2025);
+    unsigned int elevator_probability = rand() % 100;
+    if (elevator_probability < 50) {
+        h->is_elevator = YES;
+    } else {
+        h->is_elevator = NO;
+    }   
+    unsigned int chute_probability = rand() % 100;
+    if (chute_probability < 50) {
+        h->is_chute = YES;
+    } else {
+        h->is_chute = NO;
+    }
+    h->apartment_count = random_int(10, 500);
+    h->floor_count = random_int(2, 30);
+    h->avg_area = random_float(15.0f, 200.0f);
+    return h;
 }
+
 

@@ -79,7 +79,7 @@ void deque_push_back(deque* d, void* data){
 }
 
 void deque_insert(deque* d, void* data, size_t index){
-    if (d == NULL || index > d->size) return;
+    if (d == NULL || index >= d->size) return;
     if (index == 0) {
         deque_push_front(d, data);
         return;

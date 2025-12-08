@@ -29,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.29.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.29.4/CMakeSystem.cmake"
+  "D:/myprograms/lab3/src/containers/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -40,9 +41,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/containers/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab3.dir/DependInfo.cmake"
+  "src/containers/CMakeFiles/deque.dir/DependInfo.cmake"
   )
