@@ -83,105 +83,20 @@ CMakeFiles/lab3.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/main.c.s"
 	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\main.c -o CMakeFiles\lab3.dir\src\main.c.s
 
-CMakeFiles/lab3.dir/args/args.c.obj: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/args/args.c.obj: CMakeFiles/lab3.dir/includes_C.rsp
-CMakeFiles/lab3.dir/args/args.c.obj: D:/myprograms/lab3/args/args.c
-CMakeFiles/lab3.dir/args/args.c.obj: CMakeFiles/lab3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lab3.dir/args/args.c.obj"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/args/args.c.obj -MF CMakeFiles\lab3.dir\args\args.c.obj.d -o CMakeFiles\lab3.dir\args\args.c.obj -c D:\myprograms\lab3\args\args.c
-
-CMakeFiles/lab3.dir/args/args.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab3.dir/args/args.c.i"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\args\args.c > CMakeFiles\lab3.dir\args\args.c.i
-
-CMakeFiles/lab3.dir/args/args.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/args/args.c.s"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\args\args.c -o CMakeFiles\lab3.dir\args\args.c.s
-
-CMakeFiles/lab3.dir/src/io.c.obj: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/src/io.c.obj: CMakeFiles/lab3.dir/includes_C.rsp
-CMakeFiles/lab3.dir/src/io.c.obj: D:/myprograms/lab3/src/io.c
-CMakeFiles/lab3.dir/src/io.c.obj: CMakeFiles/lab3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lab3.dir/src/io.c.obj"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/src/io.c.obj -MF CMakeFiles\lab3.dir\src\io.c.obj.d -o CMakeFiles\lab3.dir\src\io.c.obj -c D:\myprograms\lab3\src\io.c
-
-CMakeFiles/lab3.dir/src/io.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab3.dir/src/io.c.i"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\src\io.c > CMakeFiles\lab3.dir\src\io.c.i
-
-CMakeFiles/lab3.dir/src/io.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/io.c.s"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\io.c -o CMakeFiles\lab3.dir\src\io.c.s
-
-CMakeFiles/lab3.dir/src/house.c.obj: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/src/house.c.obj: CMakeFiles/lab3.dir/includes_C.rsp
-CMakeFiles/lab3.dir/src/house.c.obj: D:/myprograms/lab3/src/house.c
-CMakeFiles/lab3.dir/src/house.c.obj: CMakeFiles/lab3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lab3.dir/src/house.c.obj"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/src/house.c.obj -MF CMakeFiles\lab3.dir\src\house.c.obj.d -o CMakeFiles\lab3.dir\src\house.c.obj -c D:\myprograms\lab3\src\house.c
-
-CMakeFiles/lab3.dir/src/house.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab3.dir/src/house.c.i"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\src\house.c > CMakeFiles\lab3.dir\src\house.c.i
-
-CMakeFiles/lab3.dir/src/house.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/house.c.s"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\house.c -o CMakeFiles\lab3.dir\src\house.c.s
-
-CMakeFiles/lab3.dir/src/generator.c.obj: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/src/generator.c.obj: CMakeFiles/lab3.dir/includes_C.rsp
-CMakeFiles/lab3.dir/src/generator.c.obj: D:/myprograms/lab3/src/generator.c
-CMakeFiles/lab3.dir/src/generator.c.obj: CMakeFiles/lab3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lab3.dir/src/generator.c.obj"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/src/generator.c.obj -MF CMakeFiles\lab3.dir\src\generator.c.obj.d -o CMakeFiles\lab3.dir\src\generator.c.obj -c D:\myprograms\lab3\src\generator.c
-
-CMakeFiles/lab3.dir/src/generator.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab3.dir/src/generator.c.i"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\src\generator.c > CMakeFiles\lab3.dir\src\generator.c.i
-
-CMakeFiles/lab3.dir/src/generator.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/generator.c.s"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\generator.c -o CMakeFiles\lab3.dir\src\generator.c.s
-
-CMakeFiles/lab3.dir/src/algs/sort.c.obj: CMakeFiles/lab3.dir/flags.make
-CMakeFiles/lab3.dir/src/algs/sort.c.obj: CMakeFiles/lab3.dir/includes_C.rsp
-CMakeFiles/lab3.dir/src/algs/sort.c.obj: D:/myprograms/lab3/src/algs/sort.c
-CMakeFiles/lab3.dir/src/algs/sort.c.obj: CMakeFiles/lab3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lab3.dir/src/algs/sort.c.obj"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/src/algs/sort.c.obj -MF CMakeFiles\lab3.dir\src\algs\sort.c.obj.d -o CMakeFiles\lab3.dir\src\algs\sort.c.obj -c D:\myprograms\lab3\src\algs\sort.c
-
-CMakeFiles/lab3.dir/src/algs/sort.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab3.dir/src/algs/sort.c.i"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\src\algs\sort.c > CMakeFiles\lab3.dir\src\algs\sort.c.i
-
-CMakeFiles/lab3.dir/src/algs/sort.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/algs/sort.c.s"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\algs\sort.c -o CMakeFiles\lab3.dir\src\algs\sort.c.s
-
 # Object files for target lab3
 lab3_OBJECTS = \
-"CMakeFiles/lab3.dir/src/main.c.obj" \
-"CMakeFiles/lab3.dir/args/args.c.obj" \
-"CMakeFiles/lab3.dir/src/io.c.obj" \
-"CMakeFiles/lab3.dir/src/house.c.obj" \
-"CMakeFiles/lab3.dir/src/generator.c.obj" \
-"CMakeFiles/lab3.dir/src/algs/sort.c.obj"
+"CMakeFiles/lab3.dir/src/main.c.obj"
 
 # External object files for target lab3
 lab3_EXTERNAL_OBJECTS =
 
 lab3.exe: CMakeFiles/lab3.dir/src/main.c.obj
-lab3.exe: CMakeFiles/lab3.dir/args/args.c.obj
-lab3.exe: CMakeFiles/lab3.dir/src/io.c.obj
-lab3.exe: CMakeFiles/lab3.dir/src/house.c.obj
-lab3.exe: CMakeFiles/lab3.dir/src/generator.c.obj
-lab3.exe: CMakeFiles/lab3.dir/src/algs/sort.c.obj
 lab3.exe: CMakeFiles/lab3.dir/build.make
 lab3.exe: src/containers/libdeque.a
 lab3.exe: CMakeFiles/lab3.dir/linkLibs.rsp
 lab3.exe: CMakeFiles/lab3.dir/objects1.rsp
 lab3.exe: CMakeFiles/lab3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable lab3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable lab3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\lab3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

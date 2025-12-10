@@ -8,11 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/myprograms/lab3/args/args.c" "CMakeFiles/lab3.dir/args/args.c.obj" "gcc" "CMakeFiles/lab3.dir/args/args.c.obj.d"
-  "D:/myprograms/lab3/src/algs/sort.c" "CMakeFiles/lab3.dir/src/algs/sort.c.obj" "gcc" "CMakeFiles/lab3.dir/src/algs/sort.c.obj.d"
-  "D:/myprograms/lab3/src/generator.c" "CMakeFiles/lab3.dir/src/generator.c.obj" "gcc" "CMakeFiles/lab3.dir/src/generator.c.obj.d"
-  "D:/myprograms/lab3/src/house.c" "CMakeFiles/lab3.dir/src/house.c.obj" "gcc" "CMakeFiles/lab3.dir/src/house.c.obj.d"
-  "D:/myprograms/lab3/src/io.c" "CMakeFiles/lab3.dir/src/io.c.obj" "gcc" "CMakeFiles/lab3.dir/src/io.c.obj.d"
   "D:/myprograms/lab3/src/main.c" "CMakeFiles/lab3.dir/src/main.c.obj" "gcc" "CMakeFiles/lab3.dir/src/main.c.obj.d"
   )
 
