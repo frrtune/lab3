@@ -103,7 +103,7 @@ int read_csv(const char* file_name, deque* deque) {
                     break;
                 case 7:
                     char* endptr7;
-                    h->apartment_count = strtoul(token, &endptr7, 10);
+                    h->floor_count = strtoul(token, &endptr7, 10);
                     if (errno != 0) {
                         fprintf(stderr, "Invalid floor count value at line %d: %s\n", line_count, token);
                         free(h);
@@ -113,8 +113,8 @@ int read_csv(const char* file_name, deque* deque) {
                     break;
                 case 8:
                     char* endptr8;
-                    h->apartment_count = strtof(token, &endptr8);
-                    if (errno != 0 /*|| h->avg_area <= EPS*/) {
+                    h->avg_area = strtof(token, &endptr8);
+                    if (errno != 0) {
                         fprintf(stderr, "Invalid average area value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
