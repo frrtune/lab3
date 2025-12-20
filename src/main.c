@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include "../args/args.h"
 #include "algs/sort.h"
 #include "containers/deque.h"
@@ -7,6 +9,7 @@
 #include "house.h"
 
 int main(int argc, char* argv[]){
+    srand(time(NULL));
     arg_params params;
     int ret = parse_args(argc, argv, &params);
     if (ret == 2) return 2;
@@ -30,7 +33,7 @@ int main(int argc, char* argv[]){
             if (ret == 1) return 1;
             else {
                 shaker_sort(d, house_compare);
-                if (params.asc_or_desc == 1) {
+                if (params.asc_or_desc == 0) {
                     reverse_deque(d);
                 }
                 ret = write_csv(params.output_file, d);
@@ -44,6 +47,7 @@ int main(int argc, char* argv[]){
         default:
             fprintf(stderr, "No mode has been chosen\n");
             return 1;
+
     }
     return ret;
 }

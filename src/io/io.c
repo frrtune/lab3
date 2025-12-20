@@ -92,9 +92,8 @@ int read_csv(const char* file_name, deque* deque) {
                     }
                     break;
                 case 6:
-                    // h->apartment_count = (unsigned int)atoi(token);
-                    char* endptr;
-                    h->apartment_count = strtoul(token, &endptr, 10);
+                    char* endptr6;
+                    h->apartment_count = strtoul(token, &endptr6, 10);
                     if (errno != 0) {
                         fprintf(stderr, "Invalid apartment count value at line %d: %s\n", line_count, token);
                         free(h);
@@ -103,8 +102,8 @@ int read_csv(const char* file_name, deque* deque) {
                     }
                     break;
                 case 7:
-                    char* endptr;
-                    h->apartment_count = strtoul(token, &endptr, 10);
+                    char* endptr7;
+                    h->apartment_count = strtoul(token, &endptr7, 10);
                     if (errno != 0) {
                         fprintf(stderr, "Invalid floor count value at line %d: %s\n", line_count, token);
                         free(h);
@@ -113,9 +112,9 @@ int read_csv(const char* file_name, deque* deque) {
                     }
                     break;
                 case 8:
-                    char* endptr;
-                    h->apartment_count = strtof(token, &endptr);
-                    if (errno != 0 || h->avg_area <= EPS) {
+                    char* endptr8;
+                    h->apartment_count = strtof(token, &endptr8);
+                    if (errno != 0 /*|| h->avg_area <= EPS*/) {
                         fprintf(stderr, "Invalid average area value at line %d: %s\n", line_count, token);
                         free(h);
                         if (file_name != NULL) fclose(file_ptr);
@@ -152,7 +151,6 @@ int read_csv(const char* file_name, deque* deque) {
 }
 
 int write_csv(const char* file_name, deque* deque) {
-    printf("start\n");
     FILE* file_ptr = stdout;
     if (file_name) {
         file_ptr = fopen(file_name, "w");
@@ -201,7 +199,6 @@ int write_csv(const char* file_name, deque* deque) {
     if (file_name) {
         fclose(file_ptr);
     }
-    printf("end\n");
     return 0;
 }
 
