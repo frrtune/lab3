@@ -73,15 +73,15 @@ CMakeFiles/lab3.dir/src/main.c.obj: CMakeFiles/lab3.dir/includes_C.rsp
 CMakeFiles/lab3.dir/src/main.c.obj: D:/myprograms/lab3/src/main.c
 CMakeFiles/lab3.dir/src/main.c.obj: CMakeFiles/lab3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab3.dir/src/main.c.obj"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/src/main.c.obj -MF CMakeFiles\lab3.dir\src\main.c.obj.d -o CMakeFiles\lab3.dir\src\main.c.obj -c D:\myprograms\lab3\src\main.c
+	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab3.dir/src/main.c.obj -MF CMakeFiles\lab3.dir\src\main.c.obj.d -o CMakeFiles\lab3.dir\src\main.c.obj -c D:\myprograms\lab3\src\main.c
 
 CMakeFiles/lab3.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/lab3.dir/src/main.c.i"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\src\main.c > CMakeFiles\lab3.dir\src\main.c.i
+	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\myprograms\lab3\src\main.c > CMakeFiles\lab3.dir\src\main.c.i
 
 CMakeFiles/lab3.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/lab3.dir/src/main.c.s"
-	cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\main.c -o CMakeFiles\lab3.dir\src\main.c.s
+	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\myprograms\lab3\src\main.c -o CMakeFiles\lab3.dir\src\main.c.s
 
 # Object files for target lab3
 lab3_OBJECTS = \
@@ -92,6 +92,11 @@ lab3_EXTERNAL_OBJECTS =
 
 lab3.exe: CMakeFiles/lab3.dir/src/main.c.obj
 lab3.exe: CMakeFiles/lab3.dir/build.make
+lab3.exe: src/containers/libdeque.a
+lab3.exe: src/house/libhouse.a
+lab3.exe: src/io/libio.a
+lab3.exe: args/libargs.a
+lab3.exe: src/algs/libsort.a
 lab3.exe: src/containers/libdeque.a
 lab3.exe: CMakeFiles/lab3.dir/linkLibs.rsp
 lab3.exe: CMakeFiles/lab3.dir/objects1.rsp

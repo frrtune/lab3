@@ -91,10 +91,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake"
   "D:/myprograms/lab3/CMakeLists.txt"
+  "D:/myprograms/lab3/args/CMakeLists.txt"
   "CMakeFiles/3.29.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.29.4/CMakeSystem.cmake"
+  "D:/myprograms/lab3/src/algs/CMakeLists.txt"
   "D:/myprograms/lab3/src/containers/CMakeLists.txt"
+  "D:/myprograms/lab3/src/house/CMakeLists.txt"
+  "D:/myprograms/lab3/src/io/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -111,10 +115,18 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.29.4/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/containers/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/algs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/house/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/io/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "args/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lab3.dir/DependInfo.cmake"
   "src/containers/CMakeFiles/deque.dir/DependInfo.cmake"
+  "src/algs/CMakeFiles/sort.dir/DependInfo.cmake"
+  "src/house/CMakeFiles/house.dir/DependInfo.cmake"
+  "src/io/CMakeFiles/io.dir/DependInfo.cmake"
+  "args/CMakeFiles/args.dir/DependInfo.cmake"
   )

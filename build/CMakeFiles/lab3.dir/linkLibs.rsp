@@ -1,1 +1,1 @@
- src/containers/libdeque.a -lhouse -lio -largs -lalgs -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ src/containers/libdeque.a src/house/libhouse.a src/io/libio.a args/libargs.a src/algs/libsort.a src/containers/libdeque.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

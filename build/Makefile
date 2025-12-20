@@ -141,6 +141,58 @@ deque/fast:
 	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/build
 .PHONY : deque/fast
 
+#=============================================================================
+# Target rules for targets named sort
+
+# Build rule for target.
+sort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sort
+.PHONY : sort
+
+# fast build rule for target.
+sort/fast:
+	$(MAKE) $(MAKESILENT) -f src\algs\CMakeFiles\sort.dir\build.make src/algs/CMakeFiles/sort.dir/build
+.PHONY : sort/fast
+
+#=============================================================================
+# Target rules for targets named house
+
+# Build rule for target.
+house: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 house
+.PHONY : house
+
+# fast build rule for target.
+house/fast:
+	$(MAKE) $(MAKESILENT) -f src\house\CMakeFiles\house.dir\build.make src/house/CMakeFiles/house.dir/build
+.PHONY : house/fast
+
+#=============================================================================
+# Target rules for targets named io
+
+# Build rule for target.
+io: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 io
+.PHONY : io
+
+# fast build rule for target.
+io/fast:
+	$(MAKE) $(MAKESILENT) -f src\io\CMakeFiles\io.dir\build.make src/io/CMakeFiles/io.dir/build
+.PHONY : io/fast
+
+#=============================================================================
+# Target rules for targets named args
+
+# Build rule for target.
+args: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 args
+.PHONY : args
+
+# fast build rule for target.
+args/fast:
+	$(MAKE) $(MAKESILENT) -f args\CMakeFiles\args.dir\build.make args/CMakeFiles/args.dir/build
+.PHONY : args/fast
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -173,8 +225,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... args
 	@echo ... deque
+	@echo ... house
+	@echo ... io
 	@echo ... lab3
+	@echo ... sort
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

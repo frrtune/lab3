@@ -64,16 +64,58 @@ CMAKE_BINARY_DIR = D:\myprograms\lab3\build
 # The main recursive "all" target.
 all: CMakeFiles/lab3.dir/all
 all: src/containers/all
+all: src/algs/all
+all: src/house/all
+all: src/io/all
+all: args/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/containers/preinstall
+preinstall: src/algs/preinstall
+preinstall: src/house/preinstall
+preinstall: src/io/preinstall
+preinstall: args/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lab3.dir/clean
 clean: src/containers/clean
+clean: src/algs/clean
+clean: src/house/clean
+clean: src/io/clean
+clean: args/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory args
+
+# Recursive "all" directory target.
+args/all: args/CMakeFiles/args.dir/all
+.PHONY : args/all
+
+# Recursive "preinstall" directory target.
+args/preinstall:
+.PHONY : args/preinstall
+
+# Recursive "clean" directory target.
+args/clean: args/CMakeFiles/args.dir/clean
+.PHONY : args/clean
+
+#=============================================================================
+# Directory level rules for directory src/algs
+
+# Recursive "all" directory target.
+src/algs/all: src/algs/CMakeFiles/sort.dir/all
+.PHONY : src/algs/all
+
+# Recursive "preinstall" directory target.
+src/algs/preinstall:
+.PHONY : src/algs/preinstall
+
+# Recursive "clean" directory target.
+src/algs/clean: src/algs/CMakeFiles/sort.dir/clean
+.PHONY : src/algs/clean
 
 #=============================================================================
 # Directory level rules for directory src/containers
@@ -91,18 +133,52 @@ src/containers/clean: src/containers/CMakeFiles/deque.dir/clean
 .PHONY : src/containers/clean
 
 #=============================================================================
+# Directory level rules for directory src/house
+
+# Recursive "all" directory target.
+src/house/all: src/house/CMakeFiles/house.dir/all
+.PHONY : src/house/all
+
+# Recursive "preinstall" directory target.
+src/house/preinstall:
+.PHONY : src/house/preinstall
+
+# Recursive "clean" directory target.
+src/house/clean: src/house/CMakeFiles/house.dir/clean
+.PHONY : src/house/clean
+
+#=============================================================================
+# Directory level rules for directory src/io
+
+# Recursive "all" directory target.
+src/io/all: src/io/CMakeFiles/io.dir/all
+.PHONY : src/io/all
+
+# Recursive "preinstall" directory target.
+src/io/preinstall:
+.PHONY : src/io/preinstall
+
+# Recursive "clean" directory target.
+src/io/clean: src/io/CMakeFiles/io.dir/clean
+.PHONY : src/io/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/lab3.dir
 
 # All Build rule for target.
 CMakeFiles/lab3.dir/all: src/containers/CMakeFiles/deque.dir/all
+CMakeFiles/lab3.dir/all: src/algs/CMakeFiles/sort.dir/all
+CMakeFiles/lab3.dir/all: src/house/CMakeFiles/house.dir/all
+CMakeFiles/lab3.dir/all: src/io/CMakeFiles/io.dir/all
+CMakeFiles/lab3.dir/all: args/CMakeFiles/args.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=3,4 "Built target lab3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=9,10 "Built target lab3"
 .PHONY : CMakeFiles/lab3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/lab3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
 .PHONY : CMakeFiles/lab3.dir/rule
@@ -123,7 +199,7 @@ CMakeFiles/lab3.dir/clean:
 src/containers/CMakeFiles/deque.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=1,2 "Built target deque"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=3,4 "Built target deque"
 .PHONY : src/containers/CMakeFiles/deque.dir/all
 
 # Build rule for subdir invocation for target.
@@ -141,6 +217,110 @@ deque: src/containers/CMakeFiles/deque.dir/rule
 src/containers/CMakeFiles/deque.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/clean
 .PHONY : src/containers/CMakeFiles/deque.dir/clean
+
+#=============================================================================
+# Target rules for target src/algs/CMakeFiles/sort.dir
+
+# All Build rule for target.
+src/algs/CMakeFiles/sort.dir/all: src/containers/CMakeFiles/deque.dir/all
+	$(MAKE) $(MAKESILENT) -f src\algs\CMakeFiles\sort.dir\build.make src/algs/CMakeFiles/sort.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\algs\CMakeFiles\sort.dir\build.make src/algs/CMakeFiles/sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=11,12 "Built target sort"
+.PHONY : src/algs/CMakeFiles/sort.dir/all
+
+# Build rule for subdir invocation for target.
+src/algs/CMakeFiles/sort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/algs/CMakeFiles/sort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
+.PHONY : src/algs/CMakeFiles/sort.dir/rule
+
+# Convenience name for target.
+sort: src/algs/CMakeFiles/sort.dir/rule
+.PHONY : sort
+
+# clean rule for target.
+src/algs/CMakeFiles/sort.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\algs\CMakeFiles\sort.dir\build.make src/algs/CMakeFiles/sort.dir/clean
+.PHONY : src/algs/CMakeFiles/sort.dir/clean
+
+#=============================================================================
+# Target rules for target src/house/CMakeFiles/house.dir
+
+# All Build rule for target.
+src/house/CMakeFiles/house.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\house\CMakeFiles\house.dir\build.make src/house/CMakeFiles/house.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\house\CMakeFiles\house.dir\build.make src/house/CMakeFiles/house.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=5,6 "Built target house"
+.PHONY : src/house/CMakeFiles/house.dir/all
+
+# Build rule for subdir invocation for target.
+src/house/CMakeFiles/house.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/house/CMakeFiles/house.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
+.PHONY : src/house/CMakeFiles/house.dir/rule
+
+# Convenience name for target.
+house: src/house/CMakeFiles/house.dir/rule
+.PHONY : house
+
+# clean rule for target.
+src/house/CMakeFiles/house.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\house\CMakeFiles\house.dir\build.make src/house/CMakeFiles/house.dir/clean
+.PHONY : src/house/CMakeFiles/house.dir/clean
+
+#=============================================================================
+# Target rules for target src/io/CMakeFiles/io.dir
+
+# All Build rule for target.
+src/io/CMakeFiles/io.dir/all: src/containers/CMakeFiles/deque.dir/all
+	$(MAKE) $(MAKESILENT) -f src\io\CMakeFiles\io.dir\build.make src/io/CMakeFiles/io.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\io\CMakeFiles\io.dir\build.make src/io/CMakeFiles/io.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=7,8 "Built target io"
+.PHONY : src/io/CMakeFiles/io.dir/all
+
+# Build rule for subdir invocation for target.
+src/io/CMakeFiles/io.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/io/CMakeFiles/io.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
+.PHONY : src/io/CMakeFiles/io.dir/rule
+
+# Convenience name for target.
+io: src/io/CMakeFiles/io.dir/rule
+.PHONY : io
+
+# clean rule for target.
+src/io/CMakeFiles/io.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\io\CMakeFiles\io.dir\build.make src/io/CMakeFiles/io.dir/clean
+.PHONY : src/io/CMakeFiles/io.dir/clean
+
+#=============================================================================
+# Target rules for target args/CMakeFiles/args.dir
+
+# All Build rule for target.
+args/CMakeFiles/args.dir/all:
+	$(MAKE) $(MAKESILENT) -f args\CMakeFiles\args.dir\build.make args/CMakeFiles/args.dir/depend
+	$(MAKE) $(MAKESILENT) -f args\CMakeFiles\args.dir\build.make args/CMakeFiles/args.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=1,2 "Built target args"
+.PHONY : args/CMakeFiles/args.dir/all
+
+# Build rule for subdir invocation for target.
+args/CMakeFiles/args.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 args/CMakeFiles/args.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
+.PHONY : args/CMakeFiles/args.dir/rule
+
+# Convenience name for target.
+args: args/CMakeFiles/args.dir/rule
+.PHONY : args
+
+# clean rule for target.
+args/CMakeFiles/args.dir/clean:
+	$(MAKE) $(MAKESILENT) -f args\CMakeFiles\args.dir\build.make args/CMakeFiles/args.dir/clean
+.PHONY : args/CMakeFiles/args.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

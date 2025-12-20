@@ -4,3 +4,15 @@ D:/myprograms/lab3/build/CMakeFiles/rebuild_cache.dir
 D:/myprograms/lab3/build/src/containers/CMakeFiles/deque.dir
 D:/myprograms/lab3/build/src/containers/CMakeFiles/edit_cache.dir
 D:/myprograms/lab3/build/src/containers/CMakeFiles/rebuild_cache.dir
+D:/myprograms/lab3/build/src/algs/CMakeFiles/sort.dir
+D:/myprograms/lab3/build/src/algs/CMakeFiles/edit_cache.dir
+D:/myprograms/lab3/build/src/algs/CMakeFiles/rebuild_cache.dir
+D:/myprograms/lab3/build/src/house/CMakeFiles/house.dir
+D:/myprograms/lab3/build/src/house/CMakeFiles/edit_cache.dir
+D:/myprograms/lab3/build/src/house/CMakeFiles/rebuild_cache.dir
+D:/myprograms/lab3/build/src/io/CMakeFiles/io.dir
+D:/myprograms/lab3/build/src/io/CMakeFiles/edit_cache.dir
+D:/myprograms/lab3/build/src/io/CMakeFiles/rebuild_cache.dir
+D:/myprograms/lab3/build/args/CMakeFiles/args.dir
+D:/myprograms/lab3/build/args/CMakeFiles/edit_cache.dir
+D:/myprograms/lab3/build/args/CMakeFiles/rebuild_cache.dir
