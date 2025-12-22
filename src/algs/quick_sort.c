@@ -1,4 +1,7 @@
-#include <quick_sort.h>
+#include "quick_sort.h"
+#include <stdio.h>
+#include <assert.h>
+#include <limits.h>
 
 static int get_median(deque* d, cmpr compare, int int_low, int int_high) {
     int int_middle = int_low + (int_high - int_low) / 2;
@@ -35,4 +38,28 @@ static int partition(deque* d, cmpr compare, int int_low, int int_high) {
         i++;
         j--;
     }
+}
+
+static void quick_sort_recursion(deque* d, cmpr compare, int int_low, int int_high){
+    if (int_low < int_high) {
+        int partition_index = partition(d, compare, int_low, int_high);
+        quick_sort_recursion(d, compare, int_low, partition_index);
+        quick_sort_recursion(d, compare, partition_index + 1, int_high);
+    }
+}
+
+void quick_sort(deque* d, cmpr compare){
+    if (d == NULL) {
+        fprintf(stderr, "Deque is NULL\n");
+        return;
+    }
+    if (compare == NULL) {
+        fprintf(stderr, "Comparison function is NULL\n");
+        return;
+    }
+    size_t size = deque_get_size(d);
+    assert(size <= INT_MAX);
+    int int_size = (int)size;
+    if (int_size <= 1) return;
+    quick_sort_recursion(d, compare, 0, int_size - 1);
 }
