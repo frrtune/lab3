@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = D:\myprograms\lab3\build
 
 # The main recursive "all" target.
 all: CMakeFiles/lab3.dir/all
+all: CMakeFiles/benchmark.dir/all
 all: src/containers/all
 all: src/algs/all
 all: src/house/all
@@ -80,6 +81,7 @@ preinstall: args/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lab3.dir/clean
+clean: CMakeFiles/benchmark.dir/clean
 clean: src/containers/clean
 clean: src/algs/clean
 clean: src/house/clean
@@ -173,12 +175,12 @@ CMakeFiles/lab3.dir/all: src/io/CMakeFiles/io.dir/all
 CMakeFiles/lab3.dir/all: args/CMakeFiles/args.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab3.dir\build.make CMakeFiles/lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=9,10 "Built target lab3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=11,12 "Built target lab3"
 .PHONY : CMakeFiles/lab3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/lab3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
 .PHONY : CMakeFiles/lab3.dir/rule
@@ -193,13 +195,41 @@ CMakeFiles/lab3.dir/clean:
 .PHONY : CMakeFiles/lab3.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/benchmark.dir
+
+# All Build rule for target.
+CMakeFiles/benchmark.dir/all: src/containers/CMakeFiles/deque.dir/all
+CMakeFiles/benchmark.dir/all: src/algs/CMakeFiles/sort.dir/all
+CMakeFiles/benchmark.dir/all: src/house/CMakeFiles/house.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=3,4 "Built target benchmark"
+.PHONY : CMakeFiles/benchmark.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/benchmark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
+.PHONY : CMakeFiles/benchmark.dir/rule
+
+# Convenience name for target.
+benchmark: CMakeFiles/benchmark.dir/rule
+.PHONY : benchmark
+
+# clean rule for target.
+CMakeFiles/benchmark.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/clean
+.PHONY : CMakeFiles/benchmark.dir/clean
+
+#=============================================================================
 # Target rules for target src/containers/CMakeFiles/deque.dir
 
 # All Build rule for target.
 src/containers/CMakeFiles/deque.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\containers\CMakeFiles\deque.dir\build.make src/containers/CMakeFiles/deque.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=3,4 "Built target deque"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=5,6 "Built target deque"
 .PHONY : src/containers/CMakeFiles/deque.dir/all
 
 # Build rule for subdir invocation for target.
@@ -225,12 +255,12 @@ src/containers/CMakeFiles/deque.dir/clean:
 src/algs/CMakeFiles/sort.dir/all: src/containers/CMakeFiles/deque.dir/all
 	$(MAKE) $(MAKESILENT) -f src\algs\CMakeFiles\sort.dir\build.make src/algs/CMakeFiles/sort.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\algs\CMakeFiles\sort.dir\build.make src/algs/CMakeFiles/sort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=11,12 "Built target sort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=13,14,15 "Built target sort"
 .PHONY : src/algs/CMakeFiles/sort.dir/all
 
 # Build rule for subdir invocation for target.
 src/algs/CMakeFiles/sort.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/algs/CMakeFiles/sort.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\myprograms\lab3\build\CMakeFiles 0
 .PHONY : src/algs/CMakeFiles/sort.dir/rule
@@ -251,7 +281,7 @@ src/algs/CMakeFiles/sort.dir/clean:
 src/house/CMakeFiles/house.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\house\CMakeFiles\house.dir\build.make src/house/CMakeFiles/house.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\house\CMakeFiles\house.dir\build.make src/house/CMakeFiles/house.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=5,6 "Built target house"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=7,8 "Built target house"
 .PHONY : src/house/CMakeFiles/house.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +307,7 @@ src/house/CMakeFiles/house.dir/clean:
 src/io/CMakeFiles/io.dir/all: src/containers/CMakeFiles/deque.dir/all
 	$(MAKE) $(MAKESILENT) -f src\io\CMakeFiles\io.dir\build.make src/io/CMakeFiles/io.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\io\CMakeFiles\io.dir\build.make src/io/CMakeFiles/io.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=7,8 "Built target io"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\myprograms\lab3\build\CMakeFiles --progress-num=9,10 "Built target io"
 .PHONY : src/io/CMakeFiles/io.dir/all
 
 # Build rule for subdir invocation for target.

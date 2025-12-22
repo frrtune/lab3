@@ -129,6 +129,19 @@ lab3/fast:
 .PHONY : lab3/fast
 
 #=============================================================================
+# Target rules for targets named benchmark
+
+# Build rule for target.
+benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 benchmark
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
+#=============================================================================
 # Target rules for targets named deque
 
 # Build rule for target.
@@ -193,6 +206,30 @@ args/fast:
 	$(MAKE) $(MAKESILENT) -f args\CMakeFiles\args.dir\build.make args/CMakeFiles/args.dir/build
 .PHONY : args/fast
 
+src/benchmark.obj: src/benchmark.c.obj
+.PHONY : src/benchmark.obj
+
+# target to build an object file
+src/benchmark.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/src/benchmark.c.obj
+.PHONY : src/benchmark.c.obj
+
+src/benchmark.i: src/benchmark.c.i
+.PHONY : src/benchmark.i
+
+# target to preprocess a source file
+src/benchmark.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/src/benchmark.c.i
+.PHONY : src/benchmark.c.i
+
+src/benchmark.s: src/benchmark.c.s
+.PHONY : src/benchmark.s
+
+# target to generate assembly for a file
+src/benchmark.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\benchmark.dir\build.make CMakeFiles/benchmark.dir/src/benchmark.c.s
+.PHONY : src/benchmark.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -226,11 +263,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... args
+	@echo ... benchmark
 	@echo ... deque
 	@echo ... house
 	@echo ... io
 	@echo ... lab3
 	@echo ... sort
+	@echo ... src/benchmark.obj
+	@echo ... src/benchmark.i
+	@echo ... src/benchmark.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

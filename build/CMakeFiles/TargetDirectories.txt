@@ -1,4 +1,5 @@
 D:/myprograms/lab3/build/CMakeFiles/lab3.dir
+D:/myprograms/lab3/build/CMakeFiles/benchmark.dir
 D:/myprograms/lab3/build/CMakeFiles/edit_cache.dir
 D:/myprograms/lab3/build/CMakeFiles/rebuild_cache.dir
 D:/myprograms/lab3/build/src/containers/CMakeFiles/deque.dir

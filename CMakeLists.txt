@@ -23,3 +23,17 @@ target_link_libraries(lab3
 target_include_directories(lab3 PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
+
+add_executable(benchmark
+    src/benchmark.c
+)
+
+target_link_libraries(benchmark
+    deque
+    house
+    sort
+)
+
+target_include_directories(benchmark PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
